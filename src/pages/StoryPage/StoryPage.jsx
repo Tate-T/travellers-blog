@@ -2,6 +2,12 @@ import { Header } from "../../commponents/Header/Header.jsx"
 import { Footer } from "../../commponents/Footer/Footer.jsx"
 import style from "./storyPage.css"
 
+import hero from "../../images/historyHero.webp"
+import siayvo from "../../images/siayvo.webp"
+import kurkiztan from "../../images/kurkiztan.webp"
+import popularPolar from "../../images/popularPolar.webp"
+import avatar from "../../images/historyAvatar.webp"
+
 export const StoryPage = () => {
   return (
     <>
@@ -14,7 +20,7 @@ export const StoryPage = () => {
           <p className={style.autorDate}>Автор статті <span className={style.nameDate}>Анастасія Олійник</span></p>
           <p className={style.autorDate}>Опубліковано <span className={style.nameDate}>23.07.2025</span></p>
           <button className={style.heroButton}>Європа</button>
-          <img src="#" alt="hero image" />
+          <img src={hero} alt="hero image" />
           <p className={style.heroDes}>Венеція — це не лише площа Святого Марка і гондоли на Канале Ґранде.
             Ми вирішили дослідити місто з іншого боку — вулицями, де не ходять натовпи,
             де старі венеціанці щодня п’ють еспресо на розі, а сусідки обговорюють погоду через балкони.
@@ -32,12 +38,12 @@ export const StoryPage = () => {
           <h2 className={style.subTitle}>Популярні історії</h2>
           <ul className={style.popularList}>
             <li className={style.popularItem}>
-              <img src="#" alt="popular story image" />
+              <img src={siayvo} alt="popular story image" />
               <p>Європа</p>
               <h4>Північне сяйво в Норвегії: погоня за світлом</h4>
               <p>Побачити північне сяйво було моєю давньою мрією. І ось ми в Норвегії,
                 за Полярним колом, на Лофотенських островах. Холод, віт</p>
-              <img src="#" alt="avatar" />
+              <img src={avatar} alt="avatar" />
               <p>Назар Ткаченко</p>
               <p>30.03.2025</p>
               <button>Переглянути стіттю</button>
@@ -46,12 +52,12 @@ export const StoryPage = () => {
               </svg></button>
             </li>
             <li className={style.popularItem}>
-              <img src="#" alt="popular story image" />
+              <img src={kurkiztan} alt="popular story image" />
               <p>Азія</p>
               <h4>Казахстан: між степом і мегаполісом</h4>
               <p>Несподівана подорож у Казахстан відкрила перед нами країну контрастів:
                 від сучасного Нур-Султану до безкраїх степів навколо Алмати.</p>
-              <img src="#" alt="avatar" />
+              <img src={avatar} alt="avatar" />
               <p>Єва Бондаренко</p>
               <p>02.04.2025</p>
               <button>Переглянути стіттю</button>
@@ -60,12 +66,12 @@ export const StoryPage = () => {
               </svg></button>
             </li>
             <li className={style.popularItem}>
-              <img src="#" alt="popular story image" />
+              <img src={popularPolar} alt="popular story image" />
               <p>Пустелі</p>
               <h4>Арктика на яхті: чотири тижні серед айсбергів</h4>
               <p>Північний Льодовитий океан. Ми провели чотири тижні на яхті,
                 яка прокладала шлях крізь крижане море. Мандрівка почалася зі Шпіцбергена, звідки ми п</p>
-              <img src="#" alt="avatar" />
+              <img src={avatar} alt="avatar" />
               <p>Єва Бондаренко</p>
               <p>15.04.2025</p>
               <button>Переглянути стіттю</button>
