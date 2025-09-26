@@ -1,0 +1,269 @@
+/* CSS module for HomePage */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sora:wght@100..800&display=swap');
+
+.hero {
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 244px;
+    padding-bottom: 407px;
+}
+
+.heroBox {
+    max-width: 700px;
+}
+
+.heroTitle {
+     color: var(--Color-White, #FFF);
+
+/* Display/xxl */
+font-family: var(--Font-Family-Display, 'Sora'), sans-serif;
+font-size: var(--Text-Sizes-Heading-1, 56px);
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 61.6px */
+letter-spacing: -0.56px;
+}
+
+.heroDescription {
+     color: var(--Color-White, #FFF);
+
+/* Text/Medium/Normal */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Medium, 20px);
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+max-width: 750px;
+margin-top: 24px;
+}
+
+.heroButton {
+     color: var(--Color-White, #FFF);
+
+/* Text/Regular/Medium */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+ border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Color-Royal-Blue, #4169E1);
+background: var(--Color-Royal-Blue, #4169E1);
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 6px;
+padding-bottom: 6px;
+margin-top: 32px;
+}
+
+.info {
+   background: #F7F9FF;
+   padding-top: 72px;
+   padding-bottom: 72px;
+   padding-left: 64px;
+   padding-right: 64px;
+}
+
+.infoFirstBlock {
+    margin-top: 10px;
+    display: flex;
+    gap: 24px;
+}
+
+.infoTitle {
+    color: var(--Color-Scheme-2-Text, #000);
+
+/* Display/xl */
+font-family: "Sora", sans-serif;
+font-size: 52px;
+max-width: 700px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 62.4px */
+letter-spacing: -0.52px;
+}
+
+.infoDescription {
+    color: var(--Color-Scheme-2-Text, #000);
+
+/* Text/Medium/Normal */
+font-family: "Nunito Sans";
+font-size:  20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+max-width: 533px;
+}
+
+.infoList {
+    margin-top: 64px;
+    display: flex;
+    gap: 48px;
+}
+
+.infoItem {
+    color: brown;
+}
+
+.infoItemText {
+    color: var(--Color-Scheme-2-Text, #000);
+
+/* Display/sm */
+font-family: Sora, sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 41.6px */
+letter-spacing: -0.32px;
+margin-top: 24px;
+padding-bottom: 24px;
+}
+
+.infoItemDescription {
+    color: var(--Color-Scheme-2-Text, #000);
+
+/* Text/Regular/Normal */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+max-width: 405px;
+}
+
+.history {
+    padding-top: 72px;
+   padding-bottom: 72px;
+   padding-left: 64px;
+   padding-right: 64px;
+    background: var(--Color-Scheme-2-Background, #F7F9FF);
+}
+
+.historyTitle {
+    color: var(--Color-Scheme-1-Text, #000);
+
+/* Display/xl */
+font-family: Sora, sans-serif;
+font-size: 52px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 62.4px */
+letter-spacing: -0.52px;
+}
+
+.historyButton {
+     border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Color-Royal-Blue, #4169E1);
+background: var(--Color-Royal-Blue, #4169E1);
+ color: var(--Color-White, #FFF);
+
+/* Text/Regular/Medium */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+padding-top: 10.5px;
+padding-bottom: 10.5px;
+padding-left: 12px;
+padding-right: 12px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.travelers {
+    background: var(--Color-Scheme-2-Background, #F7F9FF);
+}
+
+.travelersTitle {
+    color: var(--Color-Scheme-1-Text, #000);
+
+/* Display/xl */
+font-family: Sora, sans-serif;
+font-size: var(--Text-Sizes-Heading-2, 52px);
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 62.4px */
+letter-spacing: -0.52px;
+
+}
+
+.travelersButton {
+        border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Color-Royal-Blue, #4169E1);
+background: var(--Color-Royal-Blue, #4169E1);
+ color: var(--Color-White, #FFF);
+
+/* Text/Regular/Medium */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+padding-top: 10.5px;
+padding-bottom: 10.5px;
+padding-left: 12px;
+padding-right: 12px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.signup {
+    margin-top: 77px;
+    padding-bottom: 78px;
+    background: url("../../images/moonlit-coral-reef.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../../images/moonlit-coral-reef.png) lightgray 50% / cover no-repeat;
+    padding-top: 77px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.signupTitle {
+    color: var(--Color-White, #FFF);
+
+/* Display/lg */
+font-family: Sora, sans-serif;
+font-size: var(--Text-Sizes-Heading-3, 48px);
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 57.6px */
+letter-spacing: -0.48px;
+max-width: 558px;
+}
+
+.signupDescription {
+    color: var(--Color-White, #FFF);
+
+/* Text/Medium/Normal */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Medium, 20px);
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+max-width: 558px;
+margin-top: 24px;
+}
+
+.signupButton {
+    border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Color-Royal-Blue, #4169E1);
+background: var(--Color-Royal-Blue, #4169E1);
+ color: var(--Color-White, #FFF);
+
+/* Text/Regular/Medium */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+padding-top: 10.5px;
+padding-bottom: 10.5px;
+padding-left: 12px;
+padding-right: 12px;
+margin-top: 32px;
+}
+

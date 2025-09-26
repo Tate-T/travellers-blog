@@ -1,34 +1,37 @@
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
-import style from "./homePage.css"
+import style from "./HomePage.module.css"
+
 
 export const HomePage = () => {
   return (
     <>
-      <Header />
+          <Header />
       <main>
-        <hero>
+        <section className={style.hero}>
           <Container>
-            <h1 className="hero__title">Відкрийте світ подорожей з нами!</h1>
-            <p className="hero__description">
+            <div className={style.heroBox}>
+            <h1 className={style.heroTitle}>Відкрийте світ подорожей з нами!</h1>
+            </div>
+            <p className={style.heroDescription}>
               Приєднуйтесь до нашої спільноти мандрівників, де ви зможете
               ділитися своїми історіями та отримувати натхнення для нових
               пригод. Відкрийте для себе нові місця та знайдіть однодумців!
             </p>
-            <button type="button" className="hero__button">
+            <button type="button" className={style.heroButton}>
               Доєднатись
             </button>
           </Container>
-        </hero>
+        </section>
 
-        <section className="info">
+  <section className={style.info}>
           <Container>
-            <div className="info__first-block">
-              <h2 className="info__title">
+            <div className={style.infoFirstBlock}>
+              <h2 className={style.infoTitle}>
                 Проєкт, створений для тих, хто живе подорожами
               </h2>
-              <h3 className="info__description">
+              <h3 className={style.infoDescription}>
                 Ми віримо, що кожна подорож — це унікальна історія, варта того,
                 щоб нею поділилися. Наша платформа створена, щоб об'єднати
                 людей, закоханих у відкриття нового. Тут ви можете ділитися
@@ -36,8 +39,8 @@ export const HomePage = () => {
                 пригоди разом з нами.
               </h3>
             </div>
-            <ul className="info__list">
-              <li className="info__item">
+            <ul className={style.infoList}>
+              <li className={style.infoItem}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
@@ -50,13 +53,13 @@ export const HomePage = () => {
                     fill="black"
                   />
                 </svg>
-                <h2 className="info__item-text">Наша місія</h2>
-                <p className="info__item-descriprion">
+                <h2 className={style.infoItemText}>Наша місія</h2>
+                <p className={style.infoItemDescription}>
                   Об'єднувати людей через любов до пригод та надихати на нові
                   відкриття.
                 </p>
               </li>
-              <li className="info__item">
+              <li className={style.infoItem}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="49"
@@ -69,13 +72,13 @@ export const HomePage = () => {
                     fill="black"
                   />
                 </svg>
-                <h2 className="info__item-text">Автентичні історії</h2>
-                <p className="info__item-descriprion">
+                <h2 className={style.infoItemText}>Автентичні історії</h2>
+                <p className={style.infoItemDescription}>
                   Ми цінуємо справжні, нередаговані враження від мандрівників з
                   усього світу.
                 </p>
               </li>
-              <li className="info__item">
+              <li className={style.infoItem}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="49"
@@ -88,8 +91,8 @@ export const HomePage = () => {
                     fill="black"
                   />
                 </svg>
-                <h2 className="info__item-text">Ваша спільнота</h2>
-                <p className="info__item-descriprion">
+                <h2 className={style.infoItemText}>Ваша спільнота</h2>
+                <p className={style.infoItemDescription}>
                   Станьте частиною спільноти, де кожен може бути і автором, і
                   читачем.
                 </p>
@@ -97,23 +100,23 @@ export const HomePage = () => {
             </ul>
           </Container>
         </section>
-        <section className="history">
+  <section className={style.history}>
           <Container>
-          <h2 className="history__title">Популярні історії</h2>
-          <button type="button" className="history__button">Переглянути всі</button>
+          <h2 className={style.historyTitle}>Популярні історії</h2>
+          <button type="button" className={style.historyButton}>Переглянути всі</button>
           </Container>
         </section>
-        <section className="travelers">
+  <section className={style.travelers}>
           <Container>
-            <h2 className="travelers__title">Наші мандрівники</h2>
-            <button type="button" className="travelers__button">Переглянути всіх</button>
+            <h2 className={style.travelersTitle}>Наші мандрівники</h2>
+            <button type="button" className={style.travelersButton}>Переглянути всіх</button>
           </Container>
         </section>
-        <section className="signup">
+  <section className={style.signup}>
           <Container>
-            <h2 className="signup__title">Приєднуйтесь до нашої спільноти</h2>
-            <p className="signup__description">Долучайтеся до мандрівників, які діляться своїми історіями та надихають на нові пригоди.</p>
-            <button type="button" className="signup__button">Зареєструватися</button>
+            <h2 className={style.signupTitle}>Приєднуйтесь до нашої спільноти</h2>
+            <p className={style.signupDescription}>Долучайтеся до мандрівників, які діляться своїми історіями та надихають на нові пригоди.</p>
+            <button type="button" className={style.signupButton}>Зареєструватися</button>
           </Container>
         </section>
       </main>
