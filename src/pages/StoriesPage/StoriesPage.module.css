@@ -1,0 +1,61 @@
+
+
+.title {
+    text-align: center;
+    color: #000;
+text-align: center;
+font-family: "Sora",sans-serif ;
+font-size:56px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+letter-spacing: -0.56px;
+margin-bottom: 40px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 24px; */
+    margin-bottom: 40px;
+}
+
+.filterText {
+  color: #000;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  line-height: 150%;
+  gap: 8px;
+  padding: 6px 12px; 
+  border-radius: 8px;
+  border: 1px solid transparent; 
+  background: transparent;      
+  transition: all 0.3s ease; 
+}
+
+.filterText:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: #F2F2F2;
+  cursor: pointer;
+}
+
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.storiesItem {
+    border-radius: 16px;
+    max-width: 421px;
+    background-color: #E8EEFF;
+}
+
+.img {
+    border-radius:  16px 16px 0 0;
+    max-height: 281px;
+    width: 100%;
+       object-fit: cover;      
+}
