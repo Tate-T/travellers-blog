@@ -1,7 +1,7 @@
 import {Header} from "../../commponents/Header/Header.jsx"
 import {Footer} from "../../commponents/Footer/Footer.jsx"
 import { Container } from "../../commponents/Container/Container.jsx";
-import style from "./TravellersPage.css"
+import style from "./TravellersPage.module.css"
 
 export const TravellersPage = () => {
   return (
