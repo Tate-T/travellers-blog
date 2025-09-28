@@ -7,85 +7,85 @@ export const TravellersPage = () => {
   return (
     <>
       <Header />
-      <section className="travellersPage">
+      <section className={style.travellersPage}>
       <Container>
       <main>
         
-        <h2 className={style.test}>
+        <h2 className={style.travellersTitle}>
           Мандрівники
         </h2>
-        <ul className="travellers-list">
-          <li className="travellers-item">
-            <img src="" alt="Анастасія Олійник" className="travellers-photo"/>
-            <h3 className="travellers-name">Анастасія Олійник</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+        <ul className={style.travellersList}>
+          <li className={style.travellersItem}>
+            <img src="" alt="Анастасія Олійник" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Анастасія Олійник</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Назар Ткаченко" className="travellers-photo"/>
-            <h3 className="travellers-name">Назар Ткаченко</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Назар Ткаченко" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Назар Ткаченко</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Єва Бондаренко" className="travellers-photo"/>
-            <h3 className="travellers-name">Єва Бондаренко</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Єва Бондаренко" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Єва Бондаренко</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Дмитро Романенко" className="travellers-photo"/>
-            <h3 className="travellers-name">Дмитро Романенко</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Дмитро Романенко" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Дмитро Романенко</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Олександра Бондаренко" className="travellers-photo"/>
-            <h3 className="travellers-name">Олександра Бондаренко</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Олександра Бондаренко" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Олександра Бондаренко</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Олександр Шевчук" className="travellers-photo"/>
-            <h3 className="travellers-name">Олександр Шевчук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Олександр Шевчук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Олександр Шевчук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Софія Мельник" className="travellers-photo"/>
-            <h3 className="travellers-name">Софія Мельник</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Софія Мельник" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Софія Мельник</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Дарина Ковальчук" className="travellers-photo"/>
-            <h3 className="travellers-name">Дарина Ковальчук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Дарина Ковальчук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Дарина Ковальчук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Владислав Поліщук" className="travellers-photo"/>
-            <h3 className="travellers-name">Владислав Поліщук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Владислав Поліщук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Владислав Поліщук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Владислав Поліщук" className="travellers-photo"/>
-            <h3 className="travellers-name">Владислав Поліщук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Владислав Поліщук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Владислав Поліщук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Владислав Поліщук" className="travellers-photo"/>
-            <h3 className="travellers-name">Владислав Поліщук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Владислав Поліщук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Владислав Поліщук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
-          <li className="travellers-item">
-            <img src="" alt="Іван Ковальчук" className="travellers-photo"/>
-            <h3 className="travellers-name">Іван Ковальчук</h3>
-            <p className="travellers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
-            <button className="travellers-button">Переглянути профіль</button>
+          <li className={style.travellersItem}>
+            <img src="" alt="Іван Ковальчук" className={style.travellersPhoto}/>
+            <h3 className={style.travellersName}>Іван Ковальчук</h3>
+            <p className={style.travellersDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros</p>
+            <button className={style.travellersButton}>Переглянути профіль</button>
           </li>
         </ul>
       </main>

@@ -1,4 +1,4 @@
-/* .travellers-item {
+.travellersItem {
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -10,7 +10,7 @@
     height: 336px;
 }
 
-.travellers-list {
+.travellersList {
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
     justify-content: center;
 }
 
-.travellers-title {
+.travellersTitle {
     color: var(--Color-Scheme-1-Text, #000);
 text-align: center;
 font-size: var(--Text-Sizes-Heading-1, 56px);
@@ -27,9 +27,15 @@ font-weight: 700;
 line-height: 110%; 
 letter-spacing: -0.56px;
 margin-bottom: 24px;
+@media screen and (min-width: 375px) {
+    font-size: 32px; 
+}
+@media screen and (min-width: 768px) {
+    font-size: 48px;
+}
 }
 
-.travellers-name {
+.travellersName {
     overflow: hidden;
     color: var(--Color-Scheme-2-Text, #000);
     text-overflow: ellipsis;
@@ -38,18 +44,24 @@ margin-bottom: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    @media screen and (min-width: 768px) {
+    font-size: 18px;
+}
 }
 
-.travellers-description {
+.travellersDescription {
     color: var(--Color-Scheme-2-Text, #000);
     font-family: "Nunito Sans";
     font-size: var(--Text-Sizes-Text-Regular, 18px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    @media screen and (min-width: 768px) {
+    font-size: 16px;
+}
 }
 
-.travellers-button {
+.travellersButton {
     display: flex;
     height: 48px;
     padding: 6px 12px;
@@ -66,16 +78,15 @@ margin-bottom: 24px;
     border-radius: var(--Radius-Small, 8px);
     border: 1px solid var(--Color-Scheme-2-Border, rgba(0, 0, 0, 0.15));
     background: var(--Opacity-Neutral-Darkest-5, rgba(0, 0, 0, 0.05));
+    @media screen and (min-width: 768px) {
+    font-size: 16px;
+}
 }
 
-.travellers-photo {
+.travellersPhoto {
     width: 112px;
     height: 112px;
     aspect-ratio: 1/1;
     border-radius: 112px;
     background: lightgray 50% / cover no-repeat;
-} */
-
-.test {
-    color: green;
 }
