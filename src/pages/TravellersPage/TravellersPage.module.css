@@ -1,0 +1,81 @@
+/* .travellers-item {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: var(--Radius-Medium, 16px);
+    background: var(--Color-Scheme-2-Foreground, #E8EEFF);
+    width: 262px;
+    height: 336px;
+}
+
+.travellers-list {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.travellers-title {
+    color: var(--Color-Scheme-1-Text, #000);
+text-align: center;
+font-size: var(--Text-Sizes-Heading-1, 56px);
+font-style: normal;
+font-weight: 700;
+line-height: 110%; 
+letter-spacing: -0.56px;
+margin-bottom: 24px;
+}
+
+.travellers-name {
+    overflow: hidden;
+    color: var(--Color-Scheme-2-Text, #000);
+    text-overflow: ellipsis;
+    font-family: "Nunito Sans";
+    font-size: var(--Text-Sizes-Text-Large, 26px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.travellers-description {
+    color: var(--Color-Scheme-2-Text, #000);
+    font-family: "Nunito Sans";
+    font-size: var(--Text-Sizes-Text-Regular, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.travellers-button {
+    display: flex;
+    height: 48px;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Color-Neutral-Darkest, #000);
+    font-family: "Nunito Sans";
+    font-size: var(--Text-Sizes-Text-Regular, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: var(--Radius-Small, 8px);
+    border: 1px solid var(--Color-Scheme-2-Border, rgba(0, 0, 0, 0.15));
+    background: var(--Opacity-Neutral-Darkest-5, rgba(0, 0, 0, 0.05));
+}
+
+.travellers-photo {
+    width: 112px;
+    height: 112px;
+    aspect-ratio: 1/1;
+    border-radius: 112px;
+    background: lightgray 50% / cover no-repeat;
+} */
+
+.test {
+    color: green;
+}
