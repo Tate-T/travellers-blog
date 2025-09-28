@@ -1,0 +1,42 @@
+.header__list {
+    display: flex;
+    gap: 32px;
+}
+.header__link{
+    border-radius: 8px;
+    padding: 4px 10px;
+    height: 35px;
+    color: #000;
+    display: block;
+   
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+}
+.button__link{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 4px 10px;
+    height: 35px
+}
+.button__link:first-child {
+    color: #000; 
+    background-color: rgba(0, 0, 0, 0.05);
+   width: 58px;
+ 
+
+}
+.button__link:last-child {
+    color: #fff;
+    background-color: #4169e1;  
+   width: 113px;
+   
+}
+.header__buttons {
+    display: flex;
+    gap: 16px;
+}
