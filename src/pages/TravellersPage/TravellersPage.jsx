@@ -7,11 +7,11 @@ export const TravellersPage = () => {
   return (
     <>
       <Header />
-      <section className="TravellersPage">
+      <section className="travellersPage">
       <Container>
       <main>
         
-        <h2 className="travellers-title">
+        <h2 className={style.test}>
           Мандрівники
         </h2>
         <ul className="travellers-list">
