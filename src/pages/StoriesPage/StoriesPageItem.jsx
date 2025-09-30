@@ -2,9 +2,9 @@ import style from "./StoriesPage.module.css"
 import Human from "../../images/human.jpg"
 import Bookmark from "../../images/bookmark.png"
 
-export const StoriesPageItem = ({story: {id, img, title, article, category, rate,ownerId, date}}) => {
+export const StoriesPageItem = ({story: {id, img, title, article, category, rate,ownerId, date}, className}) => {
     return (
-        <li className={style.storiesItem} key={id}>
+        <li className={`${style.storiesItem} ${className || ""}`}  key={id}>
             <img className={style.img} src={img} alt={category}></img>
             <div className={style.box}>
             <p className={style.region}>{category}</p>
