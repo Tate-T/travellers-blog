@@ -1,0 +1,23 @@
+/* .container {
+    padding: 8px;
+    margin: 0 auto;
+    width: 100%;
+    outline: solid red;
+}
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 351px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 12px;
+        max-width: 728px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1364px;
+    }
+} */
+ 
