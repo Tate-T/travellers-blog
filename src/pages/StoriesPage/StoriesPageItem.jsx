@@ -1,6 +1,7 @@
 import style from "./StoriesPage.module.css"
 import Human from "../../images/human.jpg"
 import Bookmark from "../../images/bookmark.png"
+import BookmarkWhite from "../../images/bookmark-white.png"
 
 export const StoriesPageItem = ({story: {id, img, title, article, category, rate,ownerId, date}, className}) => {
     return (
@@ -17,7 +18,7 @@ export const StoriesPageItem = ({story: {id, img, title, article, category, rate
     <div className={style.meta}>
       <p className={style.date}>{date}</p>
       <span className={style.dot}>•</span>
-      <span className={style.bookmark}>5 🔖</span>
+      <span className={style.bookmark}>5 <img src={Bookmark} alt="bookmark" className={style.bookmarkIcon1}></img></span>
     </div>
   </div>
 </div>
