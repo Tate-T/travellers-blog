@@ -10,13 +10,13 @@ export const StoriesPage = () => {
   const [visibleCount, setVisibleCount] = useState(9); // visibleCount - сколько карточек показывать прям щас
 
   const showMore = () => {
-    setVisibleCount((prev) => prev + 9);
+    setVisibleCount((prev) => prev + 6);
   };
 
   const showLess = () => {
-    setVisibleCount(9)
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    setVisibleCount(9);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -26,6 +26,7 @@ export const StoriesPage = () => {
           <Container>
             <h3 className={style.title}>Історії Мандрівників</h3>
 
+            <p className={style.mobileCategories}>Категорії</p>
             <ul className={style.filter}>
               <li className={style.filterItem}>
                 <p className={style.filterText}>Всі історії</p>
@@ -44,9 +45,25 @@ export const StoriesPage = () => {
               </li>
             </ul>
 
+          <div className={style.dropdown}>
+            <span className={style.dropdownTitle}>Оберіть категорію</span>
+
+            <div className={style.dropdownContent}>
+              <p  className={style.filterDrop}>Всі історії</p>
+              <p  className={style.filterDrop}>Європа</p>
+              <p  className={style.filterDrop}>Азія</p>
+              <p  className={style.filterDrop}>Пустелі</p>
+              <p  className={style.filterDrop}>Африка</p>
+            </div>
+          </div>
+
             <ul className={style.stories}>
               {stories.slice(0, visibleCount).map((story) => (
-                <StoriesPageItem key={story.id} story={story} className={style.fadeIn} />
+                <StoriesPageItem
+                  key={story.id}
+                  story={story}
+                  className={style.fadeIn}
+                />
               ))}
             </ul>
 
@@ -59,7 +76,11 @@ export const StoriesPage = () => {
                 Показати ще
               </button>
             ) : (
-              <button type="button" className={style.lessBtn} onClick={showLess}>
+              <button
+                type="button"
+                className={style.lessBtn}
+                onClick={showLess}
+              >
                 Згорнути
               </button>
             )}
