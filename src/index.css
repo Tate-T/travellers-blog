@@ -43,6 +43,7 @@ main {
 button,
 a {
   cursor: pointer;
+  font-family: inherit;
 }
 
 .visually-hidden {
