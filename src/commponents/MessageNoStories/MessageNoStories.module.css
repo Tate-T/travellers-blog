@@ -1,0 +1,28 @@
+.no-message__box {
+  margin-top: 40px;
+  padding: 40px 32px;
+  background-color: #e8eeff;
+  border-radius: 24px;
+  width: fit-content;
+}
+.no-message__text {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.no-message__btn {
+  padding: 10px 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4169e1;
+  border: 1px solid #4169e1;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.no-message__btn:hover {
+  background-color: #e8eeff;
+  border-color: #4169e1;
+  color: #000000;
+}
