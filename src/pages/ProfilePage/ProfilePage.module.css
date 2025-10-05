@@ -7,9 +7,43 @@
 }
 .profile-info__name {
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
 }
 .profile-info__desc {
   font-size: 18px;
+}
+.stories__title {
+  font-size: 52px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1439px) {
+  .profile-info__box {
+    max-width: 100%;
+  }
+  .profile-info__name {
+    font-size: 20px;
+  }
+  .profile-info__desc {
+    font-size: 16px;
+  }
+  .stories__title {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile-info__box {
+    flex-direction: column;
+  }
+  .profile-info__name {
+    text-align: center;
+    font-size: 20px;
+  }
+  .profile-info__desc {
+    text-align: center;
+    font-size: 16px;
+  }
+    .stories__title {
+    font-size: 28px;
+  }
 }

@@ -26,3 +26,29 @@
   border-color: #4169e1;
   color: #000000;
 }
+@media screen and (max-width: 1439px) {
+.no-message__text {
+  font-size: 18px;
+}
+.no-message__btn {
+  padding: 12px;
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 767px) {
+.no-message__box {
+  padding: 20px;
+}
+.no-message__btn {
+width: 100%;
+}
+}
+@media screen and (max-width: 375px) {
+.no-message__box {
+  padding: 15px;
+}
+.no-message__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+}
