@@ -2,8 +2,6 @@
     background: var(--Color-Scheme-2-Foreground, #E8EEFF);
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 64px;
-    padding-right: 64px;
 }
 
 .footerBlock {
@@ -61,4 +59,8 @@ height: 36px;
 .footerPages {
     display: flex;
     gap: 32px;
+}
+
+.footerLink {
+    color: black;
 }
