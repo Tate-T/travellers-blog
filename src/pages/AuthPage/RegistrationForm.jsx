@@ -1,23 +1,24 @@
+import style from "./AuthPage.module.css"
 export const RegistrationForm = () => {
     return (
-     <form action="">
-        <h1>Реєстрація</h1>
-        <p>Раді вас бачити у спільноті мандрівників!</p>
-        <ul>
+     <form className={style.form} action="">
+        <h1 className={style.title}>Реєстрація</h1>
+        <p className={style.text}>Раді вас бачити у спільноті мандрівників!</p>
+        <ul className={style.items}>
             <li>
                 <p>Імʼя та Прізвище*</p>
-                <input type="text" />
+                <input type="text" placeholder="Ваше імʼя та прізвище"/>
             </li>
             <li>
                 <p>Пошта*</p>
-                <input type="email" />
+                <input type="email" placeholder="hello@podorozhnyky.ua"/>
             </li>
             <li>
                 <p>Пароль*</p>
-                <input type="password" />
+                <input type="password" placeholder="********"/>
             </li>
         </ul>
-        <button>Зареєструватись</button>
+        <button className={style.buttone}>Зареєструватись</button>
      </form>
     );
 }

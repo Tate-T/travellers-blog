@@ -1,0 +1,132 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    left: 64px;
+    top: 20px;
+}
+
+.logo p {
+    color: var(--Color-Scheme-1-Text, #000);
+font-family: Sora;
+font-size: 17.944px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 19.738px */
+letter-spacing: -0.179px;
+}
+
+.list {
+    display: flex;
+}
+
+.li {
+display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+}
+
+.button {
+border: none;
+background-color: transparent;
+width: 274px;
+height: 27px;
+}
+
+.active {
+border-bottom:2px solid var(--Color-Scheme-1-Border, rgba(0, 0, 0, 0.15));
+}
+
+/* ______________________________________________________ */
+
+
+.title {
+    margin-top: 32px;
+    color: var(--Color-Scheme-1-Text, #000);
+text-align: center;
+
+/* Display/xl */
+font-family: Sora;
+font-size: var(--Text-Sizes-Heading-2, 52px);
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 62.4px */
+letter-spacing: -0.52px;
+}
+
+.text {
+    color: var(--Color-Scheme-1-Text, #000);
+text-align: center;
+
+/* Text/Medium/Normal */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Medium, 20px);
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+}
+
+.form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 32px;
+}
+
+.items {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+
+.items p {
+    color: var(--Color-Scheme-1-Text, #000);
+
+/* Text/Regular/Normal */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+}
+
+.items input {
+    width: 628px;
+    display: flex;
+padding: 8px;
+align-items: center;
+gap: 8px;
+border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Opacity-Neutral-Darkest-15, rgba(0, 0, 0, 0.15));
+background: var(--Opacity-Transparent, rgba(255, 255, 255, 0.00));
+}
+
+.buttone {
+    display: flex;
+height: 44px;
+padding: 6px 12px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: var(--Radius-Small, 8px);
+border: 1px solid var(--Color-Royal-Blue, #4169E1);
+background: var(--Color-Royal-Blue, #4169E1);
+color: var(--Color-White, #FFF);
+
+/* Text/Regular/Medium */
+font-family: "Nunito Sans";
+font-size: var(--Text-Sizes-Text-Regular, 18px);
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 27px */
+}
