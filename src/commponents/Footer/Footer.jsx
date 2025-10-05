@@ -1,12 +1,13 @@
 import { Container } from "../Container/Container";
 import style from "./Footer.module.css";
-import logo from "../../images/logo.svg"
+import logo from "../../images/company-logo.png"
 
 export const Footer = () => {
   return (
     <>
-      <Container>
+      
         <footer className={style.footer}>
+          <Container>
           <div className={style.footerBlock}>
             <img src={logo} className={style.footerLogo} alt="company-logo" />
             <ul className={style.footerlistSocials}>
@@ -88,8 +89,9 @@ export const Footer = () => {
             </li>
           </div>
           <p className={style.footerPrivate}>© 2025 Подорожники. Усі права захищені.</p>
+          </Container>
           </footer>
-      </Container>
+      
     </>
   );
 };

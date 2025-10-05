@@ -1,3 +1,64 @@
 .footer {
     background: var(--Color-Scheme-2-Foreground, #E8EEFF);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.footerBlock {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 400px;
+    }
+}
+
+
+.footerPrivate {
+    margin-top: 61px;
+    position: relative;
+    text-align: center;
+}
+
+.footerPrivate::before {
+     content: "";
+    position: absolute;
+    display: block;
+    top: -30px;
+    width: 100%;
+    height: 2px;
+    background: var(--Color-Scheme-2-Border, rgba(0, 0, 0, 0.15));
+    z-index: 100;
+}
+
+.footerLogo {
+    width: 156px;
+height: 36px;
+}
+
+.footerlistSocials {
+    display: flex;
+    gap: 12px;
+}
+
+/* .footerItemSocials {
+
+} */
+
+.footerPages {
+    display: flex;
+    gap: 32px;
 }
