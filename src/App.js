@@ -11,14 +11,14 @@ import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
 function App() {
   return (
     <div className="App">
-      <AddStoryPage />
       <AuthPage />
       <HomePage/>
-      <ProfilePage/>
       <StoriesPage/>
       <StoryPage/>
       <TravellerPage/>
       <TravellersPage/>
+      <ProfilePage/>
+      <AddStoryPage />
     </div>
   );
 }
