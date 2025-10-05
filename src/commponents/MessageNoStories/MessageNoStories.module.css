@@ -43,3 +43,12 @@
 width: 100%;
 }
 }
+@media screen and (max-width: 375px) {
+.no-message__box {
+  padding: 15px;
+}
+.no-message__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+}
