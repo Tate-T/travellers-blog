@@ -1,0 +1,356 @@
+/* //--------------------- */
+/* Hero*/
+.hero {
+    margin-bottom: 45px;
+}
+
+@media screen and (min-width: 375px) {}
+
+/* //--------------------- */
+@media screen and (min-width: 768px) {
+    .storyTitle {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+        color: #000;
+    }
+
+    .heroFormater {
+        display: flex;
+        gap: 6px;
+    }
+
+    .autorList {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .autorDate {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+    }
+
+    .nameDate {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+    }
+
+    .heroButton {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 150%;
+        color: #000;
+        border: 1px solid var(--opacity-transparent);
+        border-radius: 6px;
+        padding: 4px 10px;
+        width: 77px;
+        height: 32px;
+        background: var(--opacity-neutral-darkest-5);
+    }
+
+    .heroDiv {
+        border: 0px solid rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        padding: 32px;
+        width: 360px;
+        display: flex;
+        background-color: #f2f2f2;
+        border: 0px solid rgba(0, 0, 0, 0.15);
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .saveButton {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        background: #4169e1;
+        border: 1px solid #4169e1;
+        border-radius: 8px;
+        padding: 6px 12px;
+        width: 354px;
+        height: 48px;
+    }
+
+    .heroDes {}
+
+    .autorImage {
+        border-radius: 24px;
+        margin-bottom: 65px;
+        margin-top: 5px;
+    }
+}
+
+/* //--------------------- */
+@media screen and (min-width: 1440px) {
+    .storyTitle {
+        font-size: 56px;
+        margin-top: 47px;
+        margin-bottom: 35px;
+    }
+
+    .heroFormater {
+        display: flex;
+        gap: 6px;
+    }
+
+    .heroButton {
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    .autorList {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .autorImage {
+        border-radius: 34px;
+        margin-top: 9px;
+        margin-bottom: 92px;
+    }
+
+    .autorFix {
+        display: flex;
+        gap: 25px;
+    }
+
+    .saveHistory {
+        font-family: "Sora", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: #000;
+    }
+
+    /* .heroDiv {
+        height: 234px;
+    } */
+
+    .saveAvaible {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000;
+    }
+
+    .saveButton {
+        font-size: 18px;
+    }
+
+    .heroDes {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--color-scheme-2-text);
+    }
+
+    .autorDate {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--color-scheme-2-text);
+    }
+
+    .nameDate {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--color-scheme-2-text);
+    }
+}
+
+/* Популярні історії*/
+@media screen and (min-width: 375px) {
+    .subTitle {}
+    .subFix {}
+    .popularList {}
+
+    .popularItem {
+        width: 340px;
+        display: block;
+         border-radius: 16px;
+    }
+
+    .popularImage{
+    }
+   .popularFix {
+    display: flex;
+   }
+    .popularRegion {
+        font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+color: var(--color-neutral-darkest);
+    }
+    .popularLine {
+        display: flex;
+    }
+    .popularTitle {
+        font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+    }
+
+    .popularText {
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+    }
+    .popularBlock {
+    display: none;
+    }
+    .popularBrock {
+    display: none;
+    }
+    .popularAvatar {
+        border-radius: 100%;
+        width: 48px;
+        height: 48px;
+    }
+
+    .popularName {
+        font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+    }
+
+    .popularDate {
+        font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: var(--color-scheme-1-text);
+    }
+
+    .popularButton {}
+    .popularItem {
+        width: 340px;
+        display: block;
+        border-radius: 16px;
+    }
+    .popularIcon {}
+}
+
+/* //--------------------- */
+@media screen and (min-width: 768px) {
+    .popularBlock {
+    display: flex;
+    flex-direction: column;
+    }
+    .popularBrock {
+    display: flex;
+    flex-direction: column;
+    }
+    .subTitle {
+        font-family: var(--second-family);
+font-weight: 700;
+font-size: 44px;
+line-height: 120%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-1-text);
+    }
+    .subFix {
+        padding: 24px;
+width: 340px;
+height: 352px;
+    }
+    .popularList {}
+
+    .popularItem {}
+
+    .popularImage {
+        border: 0px solid var(--color-scheme-1-border);
+width: 340px;
+height: 226px;
+    }
+
+    .popularRegion {}
+
+    .popularTitle {}
+
+    .popularText {}
+
+    .popularAvatar {}
+
+    .popularName {}
+
+    .popularDate {}
+
+    .popularButton {
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--color-neutral-darkest);
+background: var(--opacity-neutral-darkest-5);
+border: 1px solid var(--color-scheme-2-border);
+border-radius: 8px;
+padding: 6px 12px;
+width: 234px;
+height: 48px;
+    }
+
+    .popularIcon {
+        fill: var(--color-neutral-darkest);
+        border: 1px solid var(--color-scheme-2-border);
+border-radius: 8px;
+padding: 6px;
+width: 48px;
+height: 48px;
+background: var(--opacity-neutral-darkest-5);
+    }
+}
+
+/* //--------------------- */
+@media screen and (min-width: 1440px) {
+    .subTitle {}
+    .subFix {}
+    .popularList {}
+
+    .popularItem {}
+
+    .popularImage {}
+
+    .popularRegion {}
+
+    .popularTitle {}
+
+    .popularText {}
+
+    .popularAvatar {}
+
+    .popularName {}
+
+    .popularDate {}
+
+    .popularButton {}
+    .popularBlock {
+    display: none;
+    }
+    .popularIcon {}
+}
+
+/* //--------------------- */
