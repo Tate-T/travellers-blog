@@ -1,4 +1,15 @@
 .profile-info__box {
-    display: flex;
-    gap: 10px;
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  max-width: 50%;
+}
+.profile-info__name {
+  color: #000000;
+  font-weight: bold;
+  font-size: 32px;
+}
+.profile-info__desc {
+  font-size: 18px;
 }
