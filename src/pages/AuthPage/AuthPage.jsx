@@ -22,6 +22,7 @@ export const AuthPage = () => {
         </ul>
         {/* <LoginForm/> */}
         <RegistrationForm/>
+        <p className={style.copy}>© 2025 Подорожники</p>
       </main>
       </Container>
       {/* <Footer /> */}
