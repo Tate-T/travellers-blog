@@ -1,39 +1,58 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
-import style from "./StoryPage.module.css";
+import { TravellersStories } from "../../commponents/TravellersStories/TravellersStories.jsx";
+import storiesStyle from "./StoryPage.module.css";
 import hero from "../../images/historyHero.webp";
-import siayvo from "../../images/siayvo.webp";
-import kurkiztan from "../../images/kurkiztan.webp";
-import popularPolar from "../../images/popularPolar.webp";
-import avatar from "../../images/historyAvatar.webp";
+import articles from "../../data/travel-articles.json";
+import { useState, useEffect } from "react";
 
 export const StoryPage = () => {
+  const [count, setCount] = useState(2);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1440) {
+        setCount(3);
+      } else if (window.innerWidth >= 768) {
+        setCount(4);
+      } else {
+        setCount(2);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <Header />
       <main>
-        <section className={style.hero}>
+        <section className={storiesStyle.hero}>
           <Container>
-            <h1 className={style.storyTitle}>
+            <h1 className={storiesStyle.storyTitle}>
               Венеція без туристів: маршрути для справжніх мандрівників
             </h1>
-            <div className={style.autorList}>
-              <div className={style.heroFormater}>
-                <p className={style.autorDate}>
+            <div className={storiesStyle.autorList}>
+              <div className={storiesStyle.heroFormater}>
+                <p className={storiesStyle.autorDate}>
                   Автор статті{" "}
-                  <span className={style.nameDate}>Анастасія Олійник</span>
+                  <span className={storiesStyle.nameDate}>
+                    Анастасія Олійник
+                  </span>
                 </p>
-                <p className={style.autorDate}>
+                <p className={storiesStyle.autorDate}>
                   Опубліковано{" "}
-                  <span className={style.nameDate}>23.07.2025</span>
+                  <span className={storiesStyle.nameDate}>23.07.2025</span>
                 </p>
               </div>
-              <button className={style.heroButton}>Європа</button>
+              <button className={storiesStyle.heroButton}>Європа</button>
             </div>
-            <img src={hero} alt="hero" className={style.autorImage} />
-            <div className={style.autorFix}>
-              <p className={style.heroDes}>
+            <img src={hero} alt="hero" className={storiesStyle.autorImage} />
+            <div className={storiesStyle.autorFix}>
+              <p className={storiesStyle.heroDes}>
                 Венеція — це не лише площа Святого Марка і гондоли на Канале
                 Ґранде. Ми вирішили дослідити місто з іншого боку — вулицями, де
                 не ходять натовпи, де старі венеціанці щодня п’ють еспресо на
@@ -44,209 +63,22 @@ export const StoryPage = () => {
                 ділюсь маршрутами, куди варто заглянути, аби побачити справжнє
                 місто.
               </p>
-              <div className={style.heroDiv}>
-                <h3 className={style.saveHistory}>Збережіть собі історію</h3>
-                <p className={style.areAvalible}>
+              <div className={storiesStyle.heroDiv}>
+                <h3 className={storiesStyle.saveHistory}>
+                  Збережіть собі історію
+                </h3>
+                <p className={storiesStyle.areAvalible}>
                   Вона буде доступна у вашому профілі у розділі збережене
                 </p>
-                <button className={style.saveButton}>Зберегти</button>
+                <button className={storiesStyle.saveButton}>Зберегти</button>
               </div>
             </div>
           </Container>
         </section>
-        <section className={style.popularStory}>
+        <section className={storiesStyle.popularStory}>
           <Container>
-            <h2 className={style.subTitle}>Популярні історії</h2>
-            <ul className={style.popularList}>
-              <li className={style.popularItem}>
-                <img
-                  src={siayvo}
-                  alt="popular story"
-                  className={style.popularImage}
-                />
-                <div className={style.subFix}>
-                <p className={style.popularRegion}>Європа</p>
-                <h4 className={style.popularTitle}>
-                  Північне сяйво в Норвегії: погоня за світлом
-                </h4>
-                <p className={style.popularText}>
-                  Побачити північне сяйво було моєю давньою мрією. І ось ми в
-                  Норвегії, за Полярним колом, на Лофотенських островах. Холод,
-                  віт
-                </p>
-<div className={style.popularFix}>
-<img
-                  src={avatar}
-                  alt="avatar"
-                  className={style.popularAvatar}
-                />
-                <div>
-                <p className={style.popularName}>Назар Ткаченко</p>
-                <p className={style.popularDate}>30.03.2025</p>
-</div>
-</div>
-<div className={style.popularLine}>
-                <button className={style.popularButton}>
-                  Переглянути стaттю
-                </button>
-                <button className={style.popularIcon}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.0001 18.2727L7.23159 20.3127C6.66392 20.5574 6.12517 20.5115 5.61534 20.175C5.1055 19.8385 4.85059 19.3623 4.85059 18.7465V4.53396C4.85059 4.07229 5.0195 3.67204 5.35734 3.33321C5.695 2.99421 6.09384 2.82471 6.55384 2.82471H17.4463C17.908 2.82471 18.3083 2.99421 18.6471 3.33321C18.9861 3.67204 19.1556 4.07229 19.1556 4.53396V18.7465C19.1556 19.3623 18.8997 19.8385 18.3878 20.175C17.876 20.5115 17.3363 20.5574 16.7686 20.3127L12.0001 18.2727ZM12.0001 16.4505L17.4463 18.7465V4.53396H6.55384V18.7465L12.0001 16.4505ZM12.0001 4.53396H6.55384H17.4463H12.0001Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-                </div>
-                </div>
-              </li>
-              <li className={style.popularItem}>
-                <img src={kurkiztan} alt="popular story" />
-               <div className={style.subFix}>
-                <p className={style.popularRegion}>Азія</p>
-                <h4 className={style.popularTitle}>
-                  Казахстан: між степом і мегаполісом
-                </h4>
-                <p className={style.popularText}>
-                  Несподівана подорож у Казахстан відкрила перед нами країну
-                  контрастів: від сучасного Нур-Султану до безкраїх степів
-                  навколо Алмати.
-                </p>
-                <div className={style.popularFix}>
-                <img
-                  src={avatar}
-                  alt="avatar"
-                  className={style.popularAvatar}
-                />
-                <div>
-        <p className={style.popularName}>Єва Бондаренко</p>
-                <p className={style.popularDate}>02.04.2025</p>
-</div>
-</div>
-<div className={style.popularLine}>
-                <button className={style.popularButton}>
-                  Переглянути стaттю
-                </button>
-                <button className={style.popularIcon}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.0001 18.2727L7.23159 20.3127C6.66392 20.5574 6.12517 20.5115 5.61534 20.175C5.1055 19.8385 4.85059 19.3623 4.85059 18.7465V4.53396C4.85059 4.07229 5.0195 3.67204 5.35734 3.33321C5.695 2.99421 6.09384 2.82471 6.55384 2.82471H17.4463C17.908 2.82471 18.3083 2.99421 18.6471 3.33321C18.9861 3.67204 19.1556 4.07229 19.1556 4.53396V18.7465C19.1556 19.3623 18.8997 19.8385 18.3878 20.175C17.876 20.5115 17.3363 20.5574 16.7686 20.3127L12.0001 18.2727ZM12.0001 16.4505L17.4463 18.7465V4.53396H6.55384V18.7465L12.0001 16.4505ZM12.0001 4.53396H6.55384H17.4463H12.0001Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-                </div>
-                </div>
-              </li>
-              <li className={style.popularItem} className={style.popularBrock}>
-                <img
-                  src={popularPolar}
-                  className={style.popularImage}
-                  alt="popular story"
-                />
-                <div className={style.subFix}>
-                <p className={style.popularRegion}>Пустелі</p>
-                <h4 className={style.popularTitle}>
-                  Арктика на яхті: чотири тижні серед айсбергів
-                </h4>
-                <p className={style.popularText}>
-                  Північний Льодовитий океан. Ми провели чотири тижні на яхті,
-                  яка прокладала шлях крізь крижане море. Мандрівка почалася зі
-                  Шпіцбергена.
-                </p>
-                                <div className={style.popularFix}>
-                <img
-                  src={avatar}
-                  alt="avatar"
-                  className={style.popularAvatar}
-                />
-                <div>
-                    <p className={style.popularName}>Єва Бондаренко</p>
-                <p className={style.popularDate}>15.04.2025</p>
-       </div>
-</div>
-<div className={style.popularLine}>
-                              <button className={style.popularButton}>
-                  Переглянути стaттю
-                </button>
-                <button className={style.popularIcon}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.0001 18.2727L7.23159 20.3127C6.66392 20.5574 6.12517 20.5115 5.61534 20.175C5.1055 19.8385 4.85059 19.3623 4.85059 18.7465V4.53396C4.85059 4.07229 5.0195 3.67204 5.35734 3.33321C5.695 2.99421 6.09384 2.82471 6.55384 2.82471H17.4463C17.908 2.82471 18.3083 2.99421 18.6471 3.33321C18.9861 3.67204 19.1556 4.07229 19.1556 4.53396V18.7465C19.1556 19.3623 18.8997 19.8385 18.3878 20.175C17.876 20.5115 17.3363 20.5574 16.7686 20.3127L12.0001 18.2727ZM12.0001 16.4505L17.4463 18.7465V4.53396H6.55384V18.7465L12.0001 16.4505ZM12.0001 4.53396H6.55384H17.4463H12.0001Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-                </div>
-                </div>
-              </li>
-                            <li className={style.popularItem} className={style.popularBlock}>
-                <img
-                  src={popularPolar}
-                  className={style.popularImage}
-                  alt="popular story"
-                />
-                <div className={style.subFix}>
-                <p className={style.popularRegion}>Пустелі</p>
-                <h4 className={style.popularTitle}>
-                  Арктика на яхті: чотири тижні серед айсбергів
-                </h4>
-                <p className={style.popularText}>
-                  Північний Льодовитий океан. Ми провели чотири тижні на яхті,
-                  яка прокладала шлях крізь крижане море. Мандрівка почалася зі
-                  Шпіцбергена.
-                </p>
-                                <div className={style.popularFix}>
-                <img
-                  src={avatar}
-                  alt="avatar"
-                  className={style.popularAvatar}
-                />
-                <div>
-                    <p className={style.popularName}>Єва Бондаренко</p>
-                <p className={style.popularDate}>15.04.2025</p>
-       </div>
-</div>
-<div className={style.popularLine}>
-   <button className={style.popularButton}>
-                  Переглянути стaттю
-                </button>
-                <button className={style.popularIcon}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M12.0001 18.2727L7.23159 20.3127C6.66392 20.5574 6.12517 20.5115 5.61534 20.175C5.1055 19.8385 4.85059 19.3623 4.85059 18.7465V4.53396C4.85059 4.07229 5.0195 3.67204 5.35734 3.33321C5.695 2.99421 6.09384 2.82471 6.55384 2.82471H17.4463C17.908 2.82471 18.3083 2.99421 18.6471 3.33321C18.9861 3.67204 19.1556 4.07229 19.1556 4.53396V18.7465C19.1556 19.3623 18.8997 19.8385 18.3878 20.175C17.876 20.5115 17.3363 20.5574 16.7686 20.3127L12.0001 18.2727ZM12.0001 16.4505L17.4463 18.7465V4.53396H6.55384V18.7465L12.0001 16.4505ZM12.0001 4.53396H6.55384H17.4463H12.0001Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
-  </div>             
-                </div>
-              </li>
-            </ul>
+            <h2 className={storiesStyle.subTitle}>Популярні історії</h2>
+            <TravellersStories stories={articles} count={count} />
           </Container>
         </section>
       </main>
