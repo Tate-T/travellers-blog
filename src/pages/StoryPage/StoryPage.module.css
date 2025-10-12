@@ -3,9 +3,9 @@
 .hero {
     margin-bottom: 45px;
 }
-
-@media screen and (min-width: 375px) {}
-
+/* set BROWSER=none && npm start*/
+/* set BROWSER=chrome && start chrome http://localhost:3000/StoryPage && react-scripts start */
+/* set BROWSER=none && npx react-scripts start */
 /* //--------------------- */
 @media screen and (min-width: 768px) {
     .storyTitle {
@@ -58,15 +58,13 @@
     }
 
     .heroDiv {
-        border: 0px solid rgba(0, 0, 0, 0.15);
         border-radius: 24px;
         padding: 32px;
         width: 360px;
         display: flex;
-        background-color: #f2f2f2;
-        border: 0px solid rgba(0, 0, 0, 0.15);
         flex-direction: column;
         gap: 20px;
+        background-color: #f2f2f2;
     }
 
     .saveButton {
@@ -83,8 +81,6 @@
         height: 48px;
     }
 
-    .heroDes {}
-
     .autorImage {
         border-radius: 24px;
         margin-bottom: 65px;
@@ -100,18 +96,8 @@
         margin-bottom: 35px;
     }
 
-    .heroFormater {
-        display: flex;
-        gap: 6px;
-    }
-
     .heroButton {
         border: 1px solid rgba(255, 255, 255, 0);
-    }
-
-    .autorList {
-        display: flex;
-        justify-content: space-between;
     }
 
     .autorImage {
@@ -134,10 +120,6 @@
         color: #000;
     }
 
-    /* .heroDiv {
-        height: 234px;
-    } */
-
     .saveAvaible {
         font-family: "Nunito Sans", sans-serif;
         font-weight: 400;
@@ -158,199 +140,27 @@
         color: var(--color-scheme-2-text);
     }
 
-    .autorDate {
+    .autorDate, .nameDate {
         font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 150%;
-        color: var(--color-scheme-2-text);
-    }
-
-    .nameDate {
-        font-family: var(--font-family);
-        font-weight: 400;
         font-size: 18px;
         line-height: 150%;
         color: var(--color-scheme-2-text);
     }
 }
-
-/* Популярні історії*/
-@media screen and (min-width: 375px) {
-    .subTitle {}
-    .subFix {}
-    .popularList {}
-
-    .popularItem {
-        width: 340px;
-        display: block;
-         border-radius: 16px;
-    }
-
-    .popularImage{
-    }
-   .popularFix {
-    display: flex;
-   }
-    .popularRegion {
-        font-family: var(--font-family);
-font-weight: 600;
-font-size: 12px;
-line-height: 150%;
-color: var(--color-neutral-darkest);
-    }
-    .popularLine {
-        display: flex;
-    }
-    .popularTitle {
-        font-family: var(--font-family);
-font-weight: 700;
-font-size: 18px;
-line-height: 150%;
-color: var(--color-scheme-1-text);
-    }
-
-    .popularText {
-        font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: var(--color-scheme-1-text);
-    }
-    .popularBlock {
-    display: none;
-    }
-    .popularBrock {
-    display: none;
-    }
-    .popularAvatar {
-        border-radius: 100%;
-        width: 48px;
-        height: 48px;
-    }
-
-    .popularName {
-        font-family: var(--font-family);
-font-weight: 600;
-font-size: 12px;
-line-height: 150%;
-color: var(--color-scheme-1-text);
-    }
-
-    .popularDate {
-        font-family: var(--font-family);
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-color: var(--color-scheme-1-text);
-    }
-
-    .popularButton {}
-    .popularItem {
-        width: 340px;
-        display: block;
-        border-radius: 16px;
-    }
-    .popularIcon {}
-}
-
-/* //--------------------- */
-@media screen and (min-width: 768px) {
-    .popularBlock {
-    display: flex;
-    flex-direction: column;
-    }
-    .popularBrock {
-    display: flex;
-    flex-direction: column;
-    }
+/* Популярні історії */
+@media screen and (min-width: 1440px) {
     .subTitle {
         font-family: var(--second-family);
-font-weight: 700;
-font-size: 44px;
-line-height: 120%;
-letter-spacing: -0.01em;
-color: var(--color-scheme-1-text);
-    }
-    .subFix {
-        padding: 24px;
-width: 340px;
-height: 352px;
-    }
-    .popularList {}
-
-    .popularItem {}
-
-    .popularImage {
-        border: 0px solid var(--color-scheme-1-border);
-width: 340px;
-height: 226px;
-    }
-
-    .popularRegion {}
-
-    .popularTitle {}
-
-    .popularText {}
-
-    .popularAvatar {}
-
-    .popularName {}
-
-    .popularDate {}
-
-    .popularButton {
-        font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-color: var(--color-neutral-darkest);
-background: var(--opacity-neutral-darkest-5);
-border: 1px solid var(--color-scheme-2-border);
-border-radius: 8px;
-padding: 6px 12px;
-width: 234px;
-height: 48px;
-    }
-
-    .popularIcon {
-        fill: var(--color-neutral-darkest);
-        border: 1px solid var(--color-scheme-2-border);
-border-radius: 8px;
-padding: 6px;
-width: 48px;
-height: 48px;
-background: var(--opacity-neutral-darkest-5);
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        color: var(--color-scheme-1-text);
     }
 }
-
-/* //--------------------- */
 @media screen and (min-width: 1440px) {
-    .subTitle {}
-    .subFix {}
-    .popularList {}
 
-    .popularItem {}
-
-    .popularImage {}
-
-    .popularRegion {}
-
-    .popularTitle {}
-
-    .popularText {}
-
-    .popularAvatar {}
-
-    .popularName {}
-
-    .popularDate {}
-
-    .popularButton {}
-    .popularBlock {
-    display: none;
-    }
-    .popularIcon {}
 }
+@media screen and (min-width: 1440px) {
 
-/* //--------------------- */
+}
