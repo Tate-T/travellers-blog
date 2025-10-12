@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <AuthPage />
-      {/* <HomePage/>
+       <HomePage/>
       <StoriesPage/>
       <StoryPage/>
       <TravellerPage/>
       <TravellersPage/>
       <ProfilePage/>
-      <AddStoryPage /> */}
+      <AddStoryPage /> 
     </div>
   );
 }
