@@ -64,7 +64,10 @@ export const Header = () => {
             <img src={burger} alt="" />{" "}
           </a>
         </div>
+
         <div className={styles.container__div}>
+          <img src={logo} className={styles.mobile__logo} />
+          <p className={styles.header__text}>Подорожники</p>
           <nav className="header__nav">
             <ul className={styles.container__list}>
               <li className="header__item">
@@ -97,25 +100,17 @@ export const Header = () => {
                   </a>
                 </p>
               </li>
-              <li className="header__item">
-                <a
-                  className={styles.container__link}
-                  href="../../AddStoryPage/AddStoryPage.jsx"
-                >
-                  Опублікувати історію
-                </a>
-              </li>
             </ul>
           </nav>
           <div className={styles.container__buttons}>
             <a
-              className={styles.container__link}
+              className={styles.container__btn}
               href="../../AuthPage/AuthPage.jsx"
             >
               Вхід
             </a>
             <a
-              className={styles.container__link}
+              className={styles.container__btn}
               href="../../AuthPage/AuthPage.jsx"
             >
               Реєстрація
@@ -126,3 +121,4 @@ export const Header = () => {
     </header>
   );
 };
+
