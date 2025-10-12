@@ -6,26 +6,8 @@ import { TravellersStories } from "../../commponents/TravellersStories/Traveller
 import storiesStyle from "./StoryPage.module.css";
 import hero from "../../images/historyHero.webp";
 import articles from "../../data/travel-articles.json";
-import { useState, useEffect } from "react";
 
 export const StoryPage = () => {
-  const [count, setCount] = useState(2);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1440) {
-        setCount(3);
-      } else if (window.innerWidth >= 768) {
-        setCount(4);
-      } else {
-        setCount(2);
-      }
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <>
       <Header />
@@ -78,7 +60,7 @@ export const StoryPage = () => {
         <section className={storiesStyle.popularStory}>
           <Container>
             <h2 className={storiesStyle.subTitle}>Популярні історії</h2>
-            <TravellersStories stories={articles} count={count} />
+            <TravellersStories stories={articles} />
           </Container>
         </section>
       </main>
