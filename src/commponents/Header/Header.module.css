@@ -22,12 +22,11 @@ header > div {
 .header__list {
   display: none;
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1430px) {
   .header__list {
     display: flex;
     gap: 32px;
-    margin-left: 432px;
+    margin-left: auto;
     padding-top: 22px;
   }
 }
@@ -67,23 +66,23 @@ header > div {
 }
 
 /* --- Мобільне меню --- */
-.mobile {
+.header__box {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
 @media screen and (min-width: 1440px) {
-  .mobile {
+  .header__box {
     display: none;
   }
 }
 
-.mobile__link {
+.header__published {
   display: none;
 }
-@media screen and (width: 687px) {
-  .mobile__link {
+@media screen and (min-width: 768px) {
+  .header__published {
     text-align: center;
     display: flex;
     align-items: center;
@@ -95,7 +94,11 @@ header > div {
     background-color: #4169e1;
   }
 }
-
+@media screen and (min-width: 1440px) {
+  .header__published {
+    display: none;
+  }
+}
 .container__div {
   position: fixed;
   top: 0;

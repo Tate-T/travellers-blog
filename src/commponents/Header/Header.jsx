@@ -52,9 +52,9 @@ export const Header = () => {
             Реєстрація
           </a>
         </div>
-        <div className={styles.mobile}>
+        <div className={styles.header__box}>
           <a
-            className={styles.mobile__link}
+            className={styles.header__published}
             href="../../AddStoryPage/AddStoryPage.jsx"
           >
             Опублікувати історію
@@ -121,4 +121,3 @@ export const Header = () => {
     </header>
   );
 };
-
