@@ -82,7 +82,7 @@ header > div {
 .mobile__link {
   display: none;
 }
-@media screen and (min-width: 687px) {
+@media screen and (width: 687px) {
   .mobile__link {
     text-align: center;
     display: flex;
