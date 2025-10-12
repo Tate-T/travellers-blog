@@ -1,6 +1,6 @@
 import { Container } from "../Container/Container";
 import style from "./Footer.module.css";
-import logo from "../../images/company-logo.png"
+import logo from "../../images/logo.svg"
 
 export const Footer = () => {
   return (
@@ -9,7 +9,10 @@ export const Footer = () => {
         <footer className={style.footer}>
           <Container>
           <div className={style.footerBlock}>
-            <img src={logo} className={style.footerLogo} alt="company-logo" />
+            <div className={style.header__main}>
+       <img src={logo} alt="" />
+       <p className={style.header__text}>Подорожники</p>
+        </div>
             <ul className={style.footerlistSocials}>
               <li className={style.footerItemSocial}>
                 <svg 
@@ -76,17 +79,23 @@ export const Footer = () => {
                 </svg>
               </li>
             </ul>
+            <ul className={style.footerList}>
             <li className={style.footerPages}>
               <a href="/" className={style.footerLink}>
                 Головна
               </a>
+              </li>
+              <li className={style.footerPages}>
               <a href="/" className={style.footerLink}>
                 Історії
               </a>
+              </li>
+              <li className={style.footerPages}>
               <a href="/" className={style.footerLink}>
                 Мандрівники
               </a>
             </li>
+            </ul>
           </div>
           <p className={style.footerPrivate}>© 2025 Подорожники. Усі права захищені.</p>
           </Container>
