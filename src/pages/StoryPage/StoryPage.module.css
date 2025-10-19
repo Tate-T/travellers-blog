@@ -3,10 +3,92 @@
 .hero {
     margin-bottom: 45px;
 }
-/* set BROWSER=none && npm start*/
-/* set BROWSER=chrome && start chrome http://localhost:3000/StoryPage && react-scripts start */
-/* set BROWSER=none && npx react-scripts start */
-/* //--------------------- */
+
+.storyTitle {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #000;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.heroFormater {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.autorList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.autorDate {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000;
+}
+
+.nameDate {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000;
+}
+
+.heroButton {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 10px;
+    background: #f7f7f7;
+    width: auto;
+    height: 32px;
+    align-self: center;
+}
+
+.heroDiv {
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.saveButton {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+    background: #4169e1;
+    border: 1px solid #4169e1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 100%;
+    height: 44px;
+}
+
+.autorImage {
+    border-radius: 20px;
+    width: 100%;
+    margin: 16px 0;
+}
 @media screen and (min-width: 768px) {
     .storyTitle {
         font-family: "Sora", sans-serif;
@@ -148,6 +230,16 @@
     }
 }
 /* Популярні історії */
+.subTitle {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 16px;
+}
 @media screen and (min-width: 1440px) {
     .subTitle {
         font-family: var(--second-family);
@@ -157,10 +249,4 @@
         letter-spacing: -0.01em;
         color: var(--color-scheme-1-text);
     }
-}
-@media screen and (min-width: 1440px) {
-
-}
-@media screen and (min-width: 1440px) {
-
 }
