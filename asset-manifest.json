@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/travellers-blog/static/css/main.cfb9be4d.css",
-    "main.js": "/travellers-blog/static/js/main.f143547a.js",
-    "static/media/background.png": "/travellers-blog/static/media/background.60d0d7bee242e6d98637.png",
+    "main.css": "/travellers-blog/static/css/main.426e78ab.css",
+    "main.js": "/travellers-blog/static/js/main.9a61dcc5.js",
     "static/media/moonlit-coral-reef.png": "/travellers-blog/static/media/moonlit-coral-reef.a5392a715cee2d08d947.png",
+    "static/media/background.webp": "/travellers-blog/static/media/background.bf8d480a651394437c96.webp",
     "static/media/historyHero.webp": "/travellers-blog/static/media/historyHero.9dbf4bc9a9353d1b5d2e.webp",
     "static/media/profile-page-avatar.png": "/travellers-blog/static/media/profile-page-avatar.9d6e2d1911e3cac6dca0.png",
-    "static/media/kurkiztan.webp": "/travellers-blog/static/media/kurkiztan.4f96b4cce0de46198167.webp",
     "static/media/logo.svg": "/travellers-blog/static/media/logo.50d7611c0197f021b0edc038151326f5.svg",
-    "static/media/siayvo.webp": "/travellers-blog/static/media/siayvo.d56724bfe555d83b8ceb.webp",
-    "static/media/popularPolar.webp": "/travellers-blog/static/media/popularPolar.0c3b5c70968592a6dc1c.webp",
     "static/media/burger.svg": "/travellers-blog/static/media/burger.7910585d70bb8db4e10ae9f98698b5bd.svg",
     "index.html": "/travellers-blog/index.html",
-    "static/media/historyAvatar.webp": "/travellers-blog/static/media/historyAvatar.498b3d32d585a1580320.webp",
-    "main.cfb9be4d.css.map": "/travellers-blog/static/css/main.cfb9be4d.css.map",
-    "main.f143547a.js.map": "/travellers-blog/static/js/main.f143547a.js.map"
+    "main.426e78ab.css.map": "/travellers-blog/static/css/main.426e78ab.css.map",
+    "main.9a61dcc5.js.map": "/travellers-blog/static/js/main.9a61dcc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfb9be4d.css",
-    "static/js/main.f143547a.js"
+    "static/css/main.426e78ab.css",
+    "static/js/main.9a61dcc5.js"
   ]
 }
