@@ -1,18 +1,29 @@
+import { useState } from "react";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
-import style from "./HomePage.module.css"
-
+import { TravellersStories } from "../../commponents/TravellersStories/TravellersStories";
+import travelArticles from "../../data/travel-articles.json";
+import style from "./HomePage.module.css";
 
 export const HomePage = () => {
+  const [visibleCount, setVisibleCount] = useState(6); // показуємо спочатку 6 історій
+  const stories = travelArticles;
+
+  const handleShowMore = () => {
+    setVisibleCount((prevCount) => prevCount + 6); // додаємо ще 6 при натисканні
+  };
+
   return (
     <>
-          <Header />
+      <Header />
       <main>
         <section className={style.hero}>
           <Container>
             <div className={style.heroBox}>
-            <h1 className={style.heroTitle}>Відкрийте світ подорожей з нами!</h1>
+              <h1 className={style.heroTitle}>
+                Відкрийте світ подорожей з нами!
+              </h1>
             </div>
             <p className={style.heroDescription}>
               Приєднуйтесь до нашої спільноти мандрівників, де ви зможете
@@ -24,8 +35,7 @@ export const HomePage = () => {
             </button>
           </Container>
         </section>
-
-  <section className={style.info}>
+        <section className={style.info}>
           <Container>
             <div className={style.infoFirstBlock}>
               <h2 className={style.infoTitle}>
@@ -39,84 +49,233 @@ export const HomePage = () => {
                 пригоди разом з нами.
               </h3>
             </div>
-            <ul className={style.infoList}>
-              <li className={style.infoItem}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    d="M32.7716 25.4435L28.1021 32.973C27.8354 33.4143 27.4584 33.585 26.9711 33.485C26.4837 33.385 26.1734 33.0977 26.0401 32.623L24.4021 26.0085L9.28157 41.0555C8.94157 41.4032 8.54374 41.577 8.08807 41.577C7.63241 41.577 7.23457 41.4032 6.89457 41.0555C6.55491 40.7155 6.38507 40.3177 6.38507 39.862C6.38507 39.4064 6.55491 39.0085 6.89457 38.6685L21.9651 23.61L15.3271 21.9715C14.8524 21.8382 14.5671 21.528 14.4711 21.041C14.3751 20.5537 14.5437 20.1727 14.9771 19.898L22.5066 15.1785L21.8946 6.37501C21.8612 5.86701 22.0716 5.49635 22.5256 5.26301C22.9796 5.02968 23.3939 5.07968 23.7686 5.41301L30.5241 11.0945L38.7151 7.81101C39.1817 7.64435 39.5857 7.73168 39.9271 8.07301C40.2684 8.41435 40.3557 8.81835 40.1891 9.28501L36.8556 17.476L42.5371 24.2435C42.8704 24.6182 42.9287 25.0325 42.7121 25.4865C42.4954 25.9405 42.1331 26.1508 41.6251 26.1175L32.7716 25.4435ZM6.32307 11.998C6.14041 11.8233 6.04907 11.618 6.04907 11.382C6.04907 11.1463 6.14041 10.9372 6.32307 10.7545L8.76657 8.31101C8.94124 8.13635 9.14641 8.04901 9.38207 8.04901C9.61807 8.04901 9.82741 8.13635 10.0101 8.31101L12.3916 10.7045C12.5739 10.8872 12.6651 11.0943 12.6651 11.326C12.6651 11.558 12.5739 11.7653 12.3916 11.948L9.94807 14.3915C9.76541 14.5738 9.55807 14.665 9.32607 14.665C9.09441 14.665 8.88724 14.5738 8.70457 14.3915L6.32307 11.998ZM27.9741 27.073L31.0521 22.1165L36.8966 22.5545L33.0926 18.074L35.2946 12.6675L29.8881 14.8575L25.3956 11.0535L25.8456 16.898L20.8771 20.014L26.5716 21.4285L27.9741 27.073ZM36.0521 41.677L33.6086 39.2455C33.4262 39.0629 33.3434 38.8557 33.3601 38.624C33.3767 38.392 33.4762 38.1847 33.6586 38.002L36.0521 35.6205C36.2267 35.4378 36.4321 35.3465 36.6681 35.3465C36.9037 35.3465 37.1129 35.4378 37.2956 35.6205L39.7391 38.052C39.9137 38.2347 39.9927 38.442 39.9761 38.674C39.9594 38.9057 39.8637 39.1129 39.6891 39.2955L37.2956 41.677C37.1129 41.8597 36.9057 41.951 36.6741 41.951C36.4421 41.951 36.2347 41.8597 36.0521 41.677Z"
-                    fill="black"
-                  />
-                </svg>
-                <h2 className={style.infoItemText}>Наша місія</h2>
-                <p className={style.infoItemDescription}>
-                  Об'єднувати людей через любов до пригод та надихати на нові
-                  відкриття.
-                </p>
-              </li>
-              <li className={style.infoItem}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="49"
-                  height="48"
-                  viewBox="0 0 49 48"
-                  fill="none"
-                >
-                  <path
-                    d="M10.0342 38.6425V15.1075C10.0342 14.1592 10.3657 13.3523 11.0287 12.687C11.6917 12.0217 12.4957 11.689 13.4407 11.689H18.4517V5.3795C18.4517 4.8925 18.6307 4.46699 18.9887 4.10299C19.3467 3.73933 19.7695 3.5575 20.2572 3.5575H28.4092C28.8968 3.5575 29.3197 3.73933 29.6777 4.10299C30.0357 4.46699 30.2147 4.8925 30.2147 5.3795V11.689H35.2257C36.174 11.689 36.9808 12.0217 37.6462 12.687C38.3115 13.3523 38.6442 14.1592 38.6442 15.1075V38.6425C38.6442 39.5875 38.3115 40.3915 37.6462 41.0545C36.9808 41.7175 36.174 42.049 35.2257 42.049V42.8705C35.2257 43.3158 35.0767 43.6892 34.7787 43.9905C34.481 44.2918 34.106 44.4425 33.6537 44.4425C33.1967 44.4425 32.8045 44.3028 32.4772 44.0235C32.1502 43.7442 32.0185 43.3598 32.0822 42.8705V42.049H16.5842V42.8705C16.5842 43.3158 16.4353 43.6892 16.1377 43.9905C15.8397 44.2918 15.4647 44.4425 15.0127 44.4425C14.5553 44.4425 14.163 44.3028 13.8357 44.0235C13.5087 43.7442 13.377 43.3598 13.4407 42.8705V42.049C12.4957 42.049 11.6917 41.7175 11.0287 41.0545C10.3657 40.3915 10.0342 39.5875 10.0342 38.6425ZM21.5832 11.689H27.0832V6.689H21.5832V11.689ZM24.3332 23.6665C26.2472 23.6665 28.1368 23.4538 30.0022 23.0285C31.8672 22.6028 33.6083 21.8847 35.2257 20.874V15.1075H13.4407V20.876C15.058 21.8853 16.7993 22.6028 18.6647 23.0285C20.5297 23.4538 22.4192 23.6665 24.3332 23.6665ZM22.7617 27.6435V26.998C21.0933 26.898 19.4752 26.629 17.9072 26.191C16.3388 25.7527 14.85 25.1082 13.4407 24.2575V38.6425H35.2257V24.2455C33.8163 25.0962 32.3275 25.7407 30.7592 26.179C29.1912 26.617 27.573 26.89 25.9047 26.998V27.6435C25.9047 28.0888 25.755 28.4622 25.4557 28.7635C25.156 29.0645 24.7788 29.215 24.3242 29.215C23.8698 29.215 23.4958 29.0662 23.2022 28.7685C22.9085 28.4705 22.7617 28.0955 22.7617 27.6435Z"
-                    fill="black"
-                  />
-                </svg>
-                <h2 className={style.infoItemText}>Автентичні історії</h2>
-                <p className={style.infoItemDescription}>
-                  Ми цінуємо справжні, нередаговані враження від мандрівників з
-                  усього світу.
-                </p>
-              </li>
-              <li className={style.infoItem}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="49"
-                  height="48"
-                  viewBox="0 0 49 48"
-                  fill="none"
-                >
-                  <path
-                    d="M2.3916 31.9065V31.0535C2.3916 29.1895 3.31793 27.9647 5.1706 27.379C7.02293 26.793 8.66444 26.5 10.0951 26.5C11.5254 26.5 13.1668 26.7922 15.0191 27.3765C16.8718 27.9612 17.7981 29.1869 17.7981 31.0535V31.9065H2.3916ZM10.0926 23.8215C9.00494 23.8215 8.0746 23.4335 7.3016 22.6575C6.52827 21.8812 6.1416 20.948 6.1416 19.858C6.1416 18.768 6.52894 17.8364 7.3036 17.063C8.07827 16.29 9.00944 15.9035 10.0971 15.9035C11.1848 15.9035 12.1151 16.2914 12.8881 17.067C13.6614 17.843 14.0481 18.7749 14.0481 19.8625C14.0481 20.9502 13.6608 21.882 12.8861 22.658C12.1114 23.4337 11.1803 23.8215 10.0926 23.8215ZM20.5331 26.8195C20.1504 26.8195 19.8344 26.6997 19.5851 26.46C19.3358 26.2204 19.2111 25.9125 19.2111 25.5365C19.2111 25.3489 19.3358 25.024 19.5851 24.562C19.8438 24.1954 20.0481 23.812 20.1981 23.412C20.3481 23.012 20.4231 22.595 20.4231 22.161C20.4231 21.727 20.3481 21.298 20.1981 20.874C20.0481 20.45 19.8424 20.0754 19.5811 19.75C19.4731 19.6044 19.3844 19.4529 19.3151 19.2955C19.2458 19.1382 19.2111 18.9715 19.2111 18.7955C19.2111 18.4145 19.3361 18.1 19.5861 17.852C19.8361 17.6044 20.1518 17.4805 20.5331 17.4805C20.7014 17.4805 20.8744 17.5075 21.0521 17.5615C21.2298 17.6155 21.3686 17.7092 21.4686 17.8425C22.0513 18.4505 22.4779 19.1272 22.7486 19.8725C23.0193 20.6179 23.1546 21.381 23.1546 22.162C23.1546 22.9367 23.0089 23.7145 22.7176 24.4955C22.4263 25.2769 21.9981 25.9469 21.4331 26.5055C21.2998 26.6389 21.1608 26.7245 21.0161 26.7625C20.8718 26.8005 20.7108 26.8195 20.5331 26.8195ZM24.3411 30.623C23.9518 30.623 23.6353 30.4974 23.3916 30.246C23.1483 29.995 23.0266 29.6774 23.0266 29.293C23.0266 29.1157 23.0589 28.9507 23.1236 28.798C23.1883 28.645 23.2748 28.4969 23.3831 28.3535C24.2024 27.3945 24.8098 26.3922 25.2051 25.3465C25.6004 24.3009 25.7981 23.2384 25.7981 22.159C25.7981 21.0797 25.6004 20.0079 25.2051 18.9435C24.8098 17.8789 24.2018 16.8799 23.3811 15.9465C23.2741 15.8045 23.1883 15.659 23.1236 15.51C23.0589 15.3607 23.0266 15.193 23.0266 15.007C23.0266 14.6197 23.1514 14.3032 23.4011 14.0575C23.6511 13.8119 23.9673 13.689 24.3496 13.689C24.5453 13.689 24.7269 13.7345 24.8946 13.8255C25.0623 13.9165 25.2161 14.0377 25.3561 14.189C26.3988 15.389 27.1779 16.6625 27.6936 18.0095C28.2096 19.3565 28.4676 20.7387 28.4676 22.156C28.4676 23.573 28.2096 24.955 27.6936 26.302C27.1779 27.6494 26.3989 28.923 25.3566 30.123C25.2256 30.2897 25.0759 30.4147 24.9076 30.498C24.7396 30.5814 24.5508 30.623 24.3411 30.623ZM31.5351 31.9065V31.0535C31.5351 29.1869 32.4614 27.9612 34.3141 27.3765C36.1664 26.7922 37.8078 26.5 39.2381 26.5C40.6688 26.5 42.3103 26.793 44.1626 27.379C46.0153 27.9647 46.9416 29.1895 46.9416 31.0535V31.9065H31.5351ZM39.2361 23.8215C38.1484 23.8215 37.2181 23.4335 36.4451 22.6575C35.6718 21.8812 35.2851 20.948 35.2851 19.858C35.2851 18.768 35.6724 17.8364 36.4471 17.063C37.2218 16.29 38.1529 15.9035 39.2406 15.9035C40.3283 15.9035 41.2586 16.2914 42.0316 17.067C42.8049 17.843 43.1916 18.7749 43.1916 19.8625C43.1916 20.9502 42.8043 21.882 42.0296 22.658C41.2549 23.4337 40.3238 23.8215 39.2361 23.8215Z"
-                    fill="black"
-                  />
-                </svg>
-                <h2 className={style.infoItemText}>Ваша спільнота</h2>
-                <p className={style.infoItemDescription}>
-                  Станьте частиною спільноти, де кожен може бути і автором, і
-                  читачем.
-                </p>
-              </li>
-            </ul>
+
+            <ul className={style.infoList}></ul>
           </Container>
         </section>
-  <section className={style.history}>
+        <section className={style.history}>
           <Container>
-          <h2 className={style.historyTitle}>Популярні історії</h2>
-          <button type="button" className={style.historyButton}>Переглянути всі</button>
+            <h2 className={style.historyTitle}>Популярні історії</h2>
+
+            <TravellersStories stories={stories.slice(0, visibleCount)} />
+
+            {visibleCount < stories.length && (
+              <button
+                type="button"
+                className={style.historyButton}
+                onClick={handleShowMore}
+              >
+                Показати ще
+              </button>
+            )}
           </Container>
         </section>
-  <section className={style.travelers}>
+        <section className={style.travelers}>
           <Container>
             <h2 className={style.travelersTitle}>Наші мандрівники</h2>
-            <button type="button" className={style.travelersButton}>Переглянути всіх</button>
+            <main>
+              <ul className={style.travellersList}>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Анастасія Олійник"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Анастасія Олійник</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Назар Ткаченко"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Назар Ткаченко</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Єва Бондаренко"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Єва Бондаренко</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Дмитро Романенко"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Дмитро Романенко</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Олександра Бондаренко"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>
+                    Олександра Бондаренко
+                  </h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Олександр Шевчук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Олександр Шевчук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Софія Мельник"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Софія Мельник</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Дарина Ковальчук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Дарина Ковальчук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Владислав Поліщук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Владислав Поліщук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Владислав Поліщук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Владислав Поліщук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Владислав Поліщук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Владислав Поліщук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+                <li className={style.travellersItem}>
+                  <img
+                    src=""
+                    alt="Іван Ковальчук"
+                    className={style.travellersPhoto}
+                  />
+                  <h3 className={style.travellersName}>Іван Ковальчук</h3>
+                  <p className={style.travellersDescription}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros
+                  </p>
+                  <button className={style.travellersButton}>
+                    Переглянути профіль
+                  </button>
+                </li>
+              </ul>
+            </main>
+            <button type="button" className={style.travelersButton}>
+              Переглянути всіх
+            </button>
           </Container>
         </section>
-  <section className={style.signup}>
+        <section className={style.signup}>
           <Container>
-            <h2 className={style.signupTitle}>Приєднуйтесь до нашої спільноти</h2>
-            <p className={style.signupDescription}>Долучайтеся до мандрівників, які діляться своїми історіями та надихають на нові пригоди.</p>
-            <button type="button" className={style.signupButton}>Зареєструватися</button>
+            <h2 className={style.signupTitle}>
+              Приєднуйтесь до нашої спільноти
+            </h2>
+            <p className={style.signupDescription}>
+              Долучайтеся до мандрівників, які діляться своїми історіями та
+              надихають на нові пригоди.
+            </p>
+            <button type="button" className={style.signupButton}>
+              Зареєструватися
+            </button>
           </Container>
         </section>
       </main>
