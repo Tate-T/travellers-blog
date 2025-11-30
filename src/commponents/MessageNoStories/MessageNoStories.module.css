@@ -20,6 +20,7 @@
   background-color: #4169e1;
   border: 1px solid #4169e1;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  display: inline-block;
 }
 .no-message__btn:hover {
   background-color: #e8eeff;
