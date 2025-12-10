@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
-import stories from "../../data/travel-articles.json";
+// import stories from "../../data/travel-articles.json";
 import style from "./StoriesPage.module.css";
 import {TravellersStories} from "../../commponents/TravellersStories/TravellersStories.jsx"
-
-export const StoriesPage = () => {
+import { Component } from "react";
+  const visibleCount = 9;
+class StoriesPage extends Component {
   // const [visibleCount, setVisibleCount] = useState(9); // visibleCount - сколько карточек показывать прям щас
 
   // const showMore = () => {
@@ -18,8 +19,21 @@ export const StoriesPage = () => {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
   // };
 
-  const visibleCount = 9;
+  state={
+    stories: []
+  }
 
+
+
+  componentDidMount(){
+      fetch(`https://69354575fa8e704dafbd54b7.mockapi.io/travallers/:travellers`)
+  .then(res => res.json())
+  .then(data => {
+    this.setState({ stories: data });
+  }
+  )
+  }
+render(){
   return (
     <>
       <Header />
@@ -59,9 +73,9 @@ export const StoriesPage = () => {
             </div>
           </div>
 
-          <TravellersStories stories={stories} count={visibleCount}/>
+          <TravellersStories stories={this.state.stories} count={visibleCount}/>
 
-            {visibleCount < stories.length ? (
+            {visibleCount < this.state.stories.length ? (
               <button
                 type="button"
                 className={style.moreBtn}
@@ -83,5 +97,7 @@ export const StoriesPage = () => {
       </main>
       <Footer />
     </>
-  );
+  )}
 };
+
+export default StoriesPage
