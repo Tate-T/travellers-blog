@@ -3,27 +3,30 @@ import Human from "../../../images/human.jpg";
 import Bookmark from "../../../images/bookmark.png";
 
 export const StoriesPageItem = ({
-  story: { id, img, title, article, category, rate, ownerId, date },
+  story,
   className,
 }) => {
+  console.log(story)
+  console.log(story._id)
+    console.log(story._id.id)
   return (
-    <li className={`${style.storiesItem} ${className || ""}`} key={id}>
-      <img className={style.img} src={img} alt={category}></img>
+    <li className={`${style.storiesItem} ${className || ""}`} key={story._id.id}>
+      <img className={style.img} src={story.img} alt={story.category}/>
       <div className={style.box}>
-        <p className={style.region}>{category}</p>
-        <h4 className={style.descr}>{title}</h4>
-        <p className={style.text}>{article}</p>
+        <p className={style.region}>{story.category}</p>
+        <h4 className={style.descr}>{story.title}</h4>
+        <p className={style.text}>{story.article}</p>
         <div className={style.boxHuman}>
-          <img className={style.avatar} src={Human} alt="avatar" />
+          <img className={style.avatar} src={story.Human} alt="avatar" />
           <div className={style.textBlock}>
             <p className={style.name}>Анастасія Олійник</p>
             <div className={style.meta}>
-              <p className={style.date}>{date}</p>
+              <p className={style.date}>{story.date}</p>
               <span className={style.dot}>•</span>
               <span className={style.bookmark}>
                 5{" "}
                 <img
-                  src={Bookmark}
+                  src={story.Bookmark}
                   alt="bookmark"
                   className={style.bookmarkIcon1}
                 ></img>
