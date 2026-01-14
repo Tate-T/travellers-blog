@@ -26,7 +26,7 @@ class StoriesPage extends Component {
 
 
   componentDidMount(){
-      fetch(`https://69354575fa8e704dafbd54b7.mockapi.io/travallers/:travellers`)
+      fetch(`https://69354575fa8e704dafbd54b7.mockapi.io/travallers/travellers`)
   .then(res => res.json())
   .then(data => {
     this.setState({ stories: data });

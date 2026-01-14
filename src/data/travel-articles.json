@@ -1,7 +1,7 @@
 [
   {
     "_id": {
-      "$oid": "68498236a100312bea078fe6"
+      "id": "68498236a100312bea078fe6"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fe6_1_11zon.webp",
     "title": "Венеція без туристів: маршрути для справжніх мандрівників",
@@ -9,13 +9,13 @@
     "category": "Європа",
     "rate": 16,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd018"
+      "id": "6881563901add19ee16fd018"
     },
     "date": "2025-03-27"
   },  
   {
     "_id": {
-      "$oid": "68498236a100312bea078fe7"
+      "id": "68498236a100312bea078fe7"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fe7_2_11zon.webp",
     "title": "Північне сяйво в Норвегії: погоня за світлом",
@@ -23,13 +23,13 @@
     "category": "Європа",
     "rate": 31,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff3"
+      "id": "6881563901add19ee16fcff3"
     },
     "date": "2025-05-14"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fe8"
+      "id": "68498236a100312bea078fe8"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fe8_3_11zon.webp",
     "title": "Казахстан: між степом і мегаполісом",
@@ -37,13 +37,13 @@
     "category": "Азія",
     "rate": 2,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd019"
+      "id": "6881563901add19ee16fd019"
     },
     "date": "2025-07-23"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fe9"
+      "id": "68498236a100312bea078fe9"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fe9_4_11zon.webp",
     "title": "Арктика на яхті: чотири тижні серед айсбергів",
@@ -51,13 +51,13 @@
     "category": "Пустелі",
     "rate": 9,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcfff"
+      "id": "6881563901add19ee16fcfff"
     },
     "date": "2024-09-28"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fea"
+      "id": "68498236a100312bea078fea"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fea_5_11zon.webp",
     "title": "Марокко на мотоциклі: від океану до Сахари",
@@ -65,13 +65,13 @@
     "category": "Африка",
     "rate": 12,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd008"
+      "id": "6881563901add19ee16fd008"
     },
     "date": "2024-11-26"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078feb"
+      "id": "68498236a100312bea078feb"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078feb_6_11zon.webp",
     "title": "Секретні маршрути лагуни Венеції",
@@ -79,13 +79,13 @@
     "category": "Європа",
     "rate": 25,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd01a"
+      "id": "6881563901add19ee16fd01a"
     },
     "date": "2025-06-07"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fec"
+      "id": "68498236a100312bea078fec"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fec_7_11zon.webp",
     "title": "Північне сяйво на Лофотенах: ніч, що світиться",
@@ -93,13 +93,13 @@
     "category": "Європа",
     "rate": 41,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffb"
+      "id": "6881563901add19ee16fcffb"
     },
     "date": "2024-10-14"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fed"
+      "id": "68498236a100312bea078fed"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fed_8_11zon.webp",
     "title": "Тоскана: між виноградниками і середньовічними замками",
@@ -107,13 +107,13 @@
     "category": "Європа",
     "rate": 2,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd015"
+      "id": "6881563901add19ee16fd015"
     },
     "date": "2025-05-28"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fee"
+      "id": "68498236a100312bea078fee"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fee_9_11zon.webp",
     "title": "Грузія на смак: винні підвали та гірські села",
@@ -121,13 +121,13 @@
     "category": "Кавказ",
     "rate": 22,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffb"
+      "id": "6881563901add19ee16fcffb"
     },
     "date": "2025-06-13"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fef"
+      "id": "68498236a100312bea078fef"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fef_10_11zon.webp",
     "title": "Патагонія: на краю світу серед льодовиків і вітрів",
@@ -135,13 +135,13 @@
     "category": "Америка",
     "rate": 3,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd014"
+      "id": "6881563901add19ee16fd014"
     },
     "date": "2025-03-27"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff0"
+      "id": "68498236a100312bea078ff0"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff0_11_11zon.webp",
     "title": "Канали Амстердама: місто велосипедів і свободи",
@@ -149,13 +149,13 @@
     "category": "Європа",
     "rate": 38,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd016"
+      "id": "6881563901add19ee16fd016"
     },
     "date": "2024-10-17"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff1"
+      "id": "68498236a100312bea078ff1"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff1_12_11zon.webp",
     "title": "Перлина Перу: стародавнє місто Мачу-Пікчу",
@@ -163,13 +163,13 @@
     "category": "Америка",
     "rate": 3,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd002"
+      "id": "6881563901add19ee16fd002"
     },
     "date": "2025-06-26"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff2"
+      "id": "68498236a100312bea078ff2"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff2_13_11zon.webp",
     "title": "Шовковий шлях Узбекистану: міста з блакитними куполами",
@@ -177,13 +177,13 @@
     "category": "Азія",
     "rate": 11,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd006"
+      "id": "6881563901add19ee16fd006"
     },
     "date": "2025-03-06"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff3"
+      "id": "68498236a100312bea078ff3"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff3_14_11zon.webp",
     "title": "На мотоциклі крізь В’єтнам: від Ханої до Хо Ши Міна",
@@ -191,13 +191,13 @@
     "category": "Азія",
     "rate": 42,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd016"
+      "id": "6881563901add19ee16fd016"
     },
     "date": "2025-01-16"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff4"
+      "id": "68498236a100312bea078ff4"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff4_15_11zon.webp",
     "title": "Ісландія кільцем: дорога навколо острова",
@@ -205,13 +205,13 @@
     "category": "Європа",
     "rate": 18,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd01a"
+      "id": "6881563901add19ee16fd01a"
     },
     "date": "2025-06-06"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff5"
+      "id": "68498236a100312bea078ff5"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff5_16_11zon.webp",
     "title": "Солончаки Уюні: дзеркало неба в Болівії",
@@ -219,13 +219,13 @@
     "category": "Америка",
     "rate": 24,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd011"
+      "id": "6881563901add19ee16fd011"
     },
     "date": "2024-11-13"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff6"
+      "id": "68498236a100312bea078ff6"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff6_17_11zon.webp",
     "title": "Ретрит у Карпатах: тиша гір і сила природи",
@@ -233,13 +233,13 @@
     "category": "Гори",
     "rate": 8,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffe"
+      "id": "6881563901add19ee16fcffe"
     },
     "date": "2025-02-05"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff7"
+      "id": "68498236a100312bea078ff7"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff7_18_11zon.webp",
     "title": "Куба: життя у стилі ретро",
@@ -247,13 +247,13 @@
     "category": "Америка",
     "rate": 0,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd003"
+      "id": "6881563901add19ee16fd003"
     },
     "date": "2025-03-21"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff8"
+      "id": "68498236a100312bea078ff8"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff8_19_11zon.webp",
     "title": "Намібія: червоні дюни і дика природа",
@@ -261,13 +261,13 @@
     "category": "Африка",
     "rate": 14,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff2"
+      "id": "6881563901add19ee16fcff2"
     },
     "date": "2024-12-06"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ff9"
+      "id": "68498236a100312bea078ff9"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ff9_20_11zon.webp",
     "title": "Бутан: королівство щастя",
@@ -275,13 +275,13 @@
     "category": "Азія",
     "rate": 10,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd017"
+      "id": "6881563901add19ee16fd017"
     },
     "date": "2024-10-17"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ffa"
+      "id": "68498236a100312bea078ffa"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ffa_21_11zon.webp",
     "title": "Підводне сафарі в Індонезії",
@@ -289,13 +289,13 @@
     "category": "Океанія",
     "rate": 4,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff3"
+      "id": "6881563901add19ee16fcff3"
     },
     "date": "2025-06-16"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ffb"
+      "id": "68498236a100312bea078ffb"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ffb_22_11zon.webp",
     "title": "Нью-Йорк: урбаністичний портрет мегаполіса",
@@ -303,13 +303,13 @@
     "category": "Америка",
     "rate": 17,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd009"
+      "id": "6881563901add19ee16fd009"
     },
     "date": "2024-11-21"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ffc"
+      "id": "68498236a100312bea078ffc"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ffc_23_11zon.webp",
     "title": "Іран: гостинність, що розвіює стереотипи",
@@ -317,13 +317,13 @@
     "category": "Азія",
     "rate": 37,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffb"
+      "id": "6881563901add19ee16fcffb"
     },
     "date": "2025-05-25"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ffd"
+      "id": "68498236a100312bea078ffd"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ffd_24_11zon.webp",
     "title": "Лапландія: казкове Різдво з оленями",
@@ -331,26 +331,26 @@
     "category": "Європа",
     "rate": 43,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffc"
+      "id": "6881563901add19ee16fcffc"
     },
     "date": "2025-07-18"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078ffe"
+      "id": "68498236a100312bea078ffe"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078ffe_25_11zon.webp",
     "title": "Сванетія: серед веж і гірських легенд",
     "article": "Сванетія — один із найвіддаленіших і найчарівніших регіонів Грузії. Ми вирушили у село Местія, де кам’яні вежі нагадують про давні часи. Тут кожна родина має власну історію, а пісні й танці передаються з покоління в покоління. Ми ходили стежками до льодовиків, зупинялися в гостинних домівках і куштували традиційні сванські пироги. Найбільш емоційним моментом став похід до Ушгулі — одного з найвисокогірніших поселень Європи. Сванетія залишає відчуття, ніби ти доторкнувся до живої історії Кавказу.",
     "rate": 32,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffb"
+      "id": "6881563901add19ee16fcffb"
     },
     "date": "2025-01-26"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea078fff"
+      "id": "68498236a100312bea078fff"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea078fff_26_11zon.webp",
     "title": "Амазонія: у серці джунглів",
@@ -358,13 +358,13 @@
     "category": "Америка",
     "rate": 35,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd005"
+      "id": "6881563901add19ee16fd005"
     },
     "date": "2025-02-28"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900a"
+      "id": "68498236a100312bea07900a"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900a_27_11zon.webp",
     "title": "Португалія: серфінг у Назаре",
@@ -372,13 +372,13 @@
     "category": "Європа",
     "rate": 31,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd00b"
+      "id": "6881563901add19ee16fd00b"
     },
     "date": "2024-08-06"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900b"
+      "id": "68498236a100312bea07900b"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900b_28_11zon.webp",
     "title": "Єгипет: враження від Луксора",
@@ -386,13 +386,13 @@
     "category": "Африка",
     "rate": 20,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd012"
+      "id": "6881563901add19ee16fd012"
     },
     "date": "2024-11-03"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900c"
+      "id": "68498236a100312bea07900c"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900c_29_11zon.webp",
     "title": "Чилі: пустеля Атакама",
@@ -400,13 +400,13 @@
     "category": "Америка",
     "rate": 3,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd008"
+      "id": "6881563901add19ee16fd008"
     },
     "date": "2024-12-22"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900d"
+      "id": "68498236a100312bea07900d"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900d_30_11zon.webp",
     "title": "Туреччина: політ на повітряній кулі в Каппадокії",
@@ -414,13 +414,13 @@
     "category": "Азія",
     "rate": 11,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd008"
+      "id": "6881563901add19ee16fd008"
     },
     "date": "2025-05-26"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900e"
+      "id": "68498236a100312bea07900e"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900e_31_11zon.webp",
     "title": "Канада: краса національного парку Банф",
@@ -428,13 +428,13 @@
     "category": "Америка",
     "rate": 45,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd00f"
+      "id": "6881563901add19ee16fd00f"
     },
     "date": "2025-06-17"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea07900f"
+      "id": "68498236a100312bea07900f"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea07900f_32_11zon.webp",
     "title": "Франція: Прованс у сезон лаванди",
@@ -442,13 +442,13 @@
     "category": "Європа",
     "rate": 13,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff7"
+      "id": "6881563901add19ee16fcff7"
     },
     "date": "2024-08-18"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079000"
+      "id": "68498236a100312bea079000"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079000_33_11zon.webp",
     "title": "Сеул: де традиція зустрічається з майбутнім",
@@ -456,13 +456,13 @@
     "category": "Азія",
     "rate": 14,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffb"
+      "id": "6881563901add19ee16fcffb"
     },
     "date": "2024-12-24"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079001"
+      "id": "68498236a100312bea079001"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079001_34_11zon.webp",
     "title": "Піренеї: трек у тиші гір",
@@ -470,13 +470,13 @@
     "category": "Гори",
     "rate": 37,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff5"
+      "id": "6881563901add19ee16fcff5"
     },
     "date": "2024-09-17"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079002"
+      "id": "68498236a100312bea079002"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079002_35_11zon.webp",
     "title": "Мадагаскар: острів дивовижних створінь",
@@ -484,13 +484,13 @@
     "category": "Африка",
     "rate": 11,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff7"
+      "id": "6881563901add19ee16fcff7"
     },
     "date": "2024-08-28"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079003"
+      "id": "68498236a100312bea079003"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079003_36_11zon.webp",
     "title": "Нова Зеландія: кемпінг серед гір і озер",
@@ -498,13 +498,13 @@
     "category": "Океанія",
     "rate": 26,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd00a"
+      "id": "6881563901add19ee16fd00a"
     },
     "date": "2025-06-28"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079004"
+      "id": "68498236a100312bea079004"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079004_37_11zon.webp",
     "title": "Сицилія: вулкани, міста і смаки",
@@ -512,13 +512,13 @@
     "category": "Європа",
     "rate": 29,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd012"
+      "id": "6881563901add19ee16fd012"
     },
     "date": "2025-03-08"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079005"
+      "id": "68498236a100312bea079005"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079005_38_11zon.webp",
     "title": "Балкани: від Белграда до Котора",
@@ -526,13 +526,13 @@
     "category": "Балкани",
     "rate": 25,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd004"
+      "id": "6881563901add19ee16fd004"
     },
     "date": "2025-07-01"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079006"
+      "id": "68498236a100312bea079006"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079006_39_11zon.webp",
     "title": "Тайвань: велоподорож уздовж узбережжя",
@@ -540,13 +540,13 @@
     "category": "Азія",
     "rate": 12,
     "ownerId": {
-      "$oid": "6881563901add19ee16fd00e"
+      "id": "6881563901add19ee16fd00e"
     },
     "date": "2025-06-05"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079007"
+      "id": "68498236a100312bea079007"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079007_40_11zon.webp",
     "title": "Норвегія: трек до фіордів",
@@ -554,13 +554,13 @@
     "category": "Європа",
     "rate": 21,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcffe"
+      "id": "6881563901add19ee16fcffe"
     },
     "date": "2025-03-27"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079008"
+      "id": "68498236a100312bea079008"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079008_41_11zon.webp",
     "title": "Йорданія: шлях у Петру",
@@ -568,13 +568,13 @@
     "category": "Азія",
     "rate": 4,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff7"
+      "id": "6881563901add19ee16fcff7"
     },
     "date": "2025-01-10"
   },
   {
     "_id": {
-      "$oid": "68498236a100312bea079009"
+      "id": "68498236a100312bea079009"
     },
     "img": "https://ftp.goit.study/img/travel-blog/68498236a100312bea079009_42_11zon.webp",
     "title": "Кенія: велике сафарі",
@@ -582,7 +582,7 @@
     "category": "Африка",
     "rate": 14,
     "ownerId": {
-      "$oid": "6881563901add19ee16fcff6"
+      "id": "6881563901add19ee16fcff6"
     },
     "date": "2024-10-27"
   }

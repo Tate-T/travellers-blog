@@ -7,7 +7,7 @@ export const TravellersStories = ({stories, count}) => {
           <ul className={style.stories}>
               {stories.slice(0, count).map((story) => (
                 <StoriesPageItem
-                  key={story.id}
+                  key={story._id}
                   story={story}
                   className={style.fadeIn}
                 />
