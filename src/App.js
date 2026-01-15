@@ -5,7 +5,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import StoriesPage from "./pages/StoriesPage/StoriesPage";
 import { StoryPage } from "./pages/StoryPage/StoryPage";
-import { TravellerPage } from "./pages/TravellerPage/TravellerPage";
+
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
       <HomePage />
       <StoriesPage />
       <StoryPage />
-      <TravellerPage />
       <TravellersPage />
       <ProfilePage />
       <AddStoryPage />

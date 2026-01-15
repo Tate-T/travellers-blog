@@ -5,7 +5,9 @@ export const AddStoryPage = () => {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <input type="file" download/>
+      </main>
       <Footer />
     </>
   );
