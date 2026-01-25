@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
 import { TravellersStories } from "../../commponents/TravellersStories/TravellersStories";
 import travelArticles from "../../data/travel-articles.json";
 import style from "./HomePage.module.css";
+import { HomepageContext } from "../../commponents/context/HomepageContext.jsx";
 
 export const HomePage = () => {
   const [visibleCount, setVisibleCount] = useState(6); // показуємо спочатку 6 історій
@@ -13,6 +14,12 @@ export const HomePage = () => {
   const handleShowMore = () => {
     setVisibleCount((prevCount) => prevCount + 6); // додаємо ще 6 при натисканні
   };
+
+  const contextValue = {
+    stories,
+    visibleCount,
+    handleShowMore,
+  }
 
   return (
     <>
@@ -53,6 +60,7 @@ export const HomePage = () => {
             <ul className={style.infoList}></ul>
           </Container>
         </section>
+        <HomepageContext.Provider value={contextValue}>
         <section className={style.history}>
           <Container>
             <h2 className={style.historyTitle}>Популярні історії</h2>
@@ -70,6 +78,7 @@ export const HomePage = () => {
             )}
           </Container>
         </section>
+        </HomepageContext.Provider>
         <section className={style.travelers}>
           <Container>
             <h2 className={style.travelersTitle}>Наші мандрівники</h2>
