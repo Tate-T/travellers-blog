@@ -8,9 +8,8 @@ export const StoriesPageItem = ({
 }) => {
   console.log(story)
   console.log(story._id)
-    console.log(story._id.id)
   return (
-    <li className={`${style.storiesItem} ${className || ""}`} key={story._id.id}>
+    <li className={`${style.storiesItem} ${className || ""}`}>
       <img className={style.img} src={story.img} alt={story.category}/>
       <div className={style.box}>
         <p className={style.region}>{story.category}</p>
