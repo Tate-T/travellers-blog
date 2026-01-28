@@ -1,25 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, useMemo, useState } from "react";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
 import { TravellersStories } from "../../commponents/TravellersStories/TravellersStories";
 import travelArticles from "../../data/travel-articles.json";
 import style from "./HomePage.module.css";
-import { HomepageContext } from "../../commponents/context/HomepageContext.jsx";
-
+import { HomepageContext } from "../../context/HomepageContext.jsx"
 export const HomePage = () => {
-  const [visibleCount, setVisibleCount] = useState(6); // показуємо спочатку 6 історій
-  const stories = travelArticles;
-
-  const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 6); // додаємо ще 6 при натисканні
-  };
-
-  const contextValue = {
-    stories,
-    visibleCount,
-    handleShowMore,
-  }
+  // const [visibleCount, setVisibleCount] = useState(6); // показуємо спочатку 6 історій
+  // const stories = travelArticles;
+  // const handleShowMore = () => {
+  //   setVisibleCount((prevCount) => prevCount + 6); // додаємо ще 6 при натисканні
+  // };
+  // const handleShowMore = useMemo(() => {
+  //    setVisibleCount((prevCount) => prevCount + 6);
+  // }, [visibleCount]) 
+  // const contextValue = {
+  //   stories,
+  //   visibleCount,
+  //   handleShowMore,
+  // }
 
   return (
     <>
@@ -60,25 +60,27 @@ export const HomePage = () => {
             <ul className={style.infoList}></ul>
           </Container>
         </section>
-        <HomepageContext.Provider value={contextValue}>
+        {/* <HomepageContext.Provider value={contextValue}> */}
         <section className={style.history}>
           <Container>
             <h2 className={style.historyTitle}>Популярні історії</h2>
 
-            <TravellersStories stories={stories.slice(0, visibleCount)} />
+            {/* <TravellersStories stories={stories.slice(0, visibleCount)} /> */}
 
-            {visibleCount < stories.length && (
+            {/* {visibleCount < stories.length && */}
+             (
               <button
                 type="button"
                 className={style.historyButton}
-                onClick={handleShowMore}
+                // onClick={handleShowMore}
               >
                 Показати ще
               </button>
-            )}
+            )
+            {/* } */}
           </Container>
         </section>
-        </HomepageContext.Provider>
+        {/* </HomepageContext.Provider> */}
         <section className={style.travelers}>
           <Container>
             <h2 className={style.travelersTitle}>Наші мандрівники</h2>
