@@ -3,9 +3,11 @@ import { StoriesPageItem } from "./TravellersStoriesItem/TravellersStoriesItem.j
 
 
 export const TravellersStories = ({stories, count}) => {
+    // const {stories} = stories;
+    console.log(stories);
     return(
           <ul className={style.stories}>
-              {stories.slice(0, count).map((story) => (
+              {stories.map((story) => (
                 <StoriesPageItem
                   key={story._id}
                   story={story}

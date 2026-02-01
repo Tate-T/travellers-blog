@@ -3,7 +3,7 @@ import { AddStoryPage } from "./pages/AddStoryPage/AddStoryPage";
 import { AuthPage } from "./pages/AuthPage/AuthPage";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
-// import StoriesPage  from "./pages/StoriesPage/StoriesPage";
+import StoriesPage  from "./pages/StoriesPage/StoriesPage";
 import { StoryPage } from "./pages/StoryPage/StoryPage";
 import { TravellerPage } from "./pages/TravellerPage/TravellerPage";
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <AuthPage />
       <HomePage />
-      {/* <StoriesPage /> */}
+      <StoriesPage />
       {/* <StoryPage /> */}
       <TravellerPage />
       <TravellersPage />

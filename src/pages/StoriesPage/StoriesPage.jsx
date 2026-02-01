@@ -1,13 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Header } from "../../commponents/Header/Header.jsx";
 import { Footer } from "../../commponents/Footer/Footer.jsx";
 import { Container } from "../../commponents/Container/Container";
-// import stories from "../../data/travel-articles.json";
 import style from "./StoriesPage.module.css";
-import {TravellersStories} from "../../commponents/TravellersStories/TravellersStories.jsx"
-import { Component } from "react";
-  const visibleCount = 9;
-class StoriesPage extends Component {
+import { TravellersStories } from "../../commponents/TravellersStories/TravellersStories.jsx";
+import { useArticleFetch } from "../../hooks/useArticleFetch.jsx";
+const visibleCount = 9;
+const StoriesPage = ({}) => {
   // const [visibleCount, setVisibleCount] = useState(9); // visibleCount - сколько карточек показывать прям щас
 
   // const showMore = () => {
@@ -19,21 +18,8 @@ class StoriesPage extends Component {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
   // };
 
-  state={
-    stories: []
-  }
+  const stories = useArticleFetch();
 
-
-
-  componentDidMount(){
-      fetch(`https://6975e3b9c0c36a2a994fb0e7.mockapi.io/api/stories/articles`)
-  .then(res => res.json())
-  .then(data => {
-    this.setState({ stories: data });
-  }
-  )
-  }
-render(){
   return (
     <>
       <Header />
@@ -41,7 +27,6 @@ render(){
         <section className={style.storiesPage}>
           <Container>
             <h3 className={style.title}>Історії Мандрівників</h3>
-
             <p className={style.mobileCategories}>Категорії</p>
             <ul className={style.filter}>
               <li className={style.filterItem}>
@@ -61,21 +46,20 @@ render(){
               </li>
             </ul>
 
-          <div className={style.dropdown}>
-            <span className={style.dropdownTitle}>Оберіть категорію</span>
-
-            <div className={style.dropdownContent}>
-              <p  className={style.filterDrop}>Всі історії</p>
-              <p  className={style.filterDrop}>Європа</p>
-              <p  className={style.filterDrop}>Азія</p>
-              <p  className={style.filterDrop}>Пустелі</p>
-              <p  className={style.filterDrop}>Африка</p>
+            <div className={style.dropdown}>
+              <span className={style.dropdownTitle}>Оберіть категорію</span>
+              <div className={style.dropdownContent}>
+                <p className={style.filterDrop}>Всі історії</p>
+                <p className={style.filterDrop}>Європа</p>
+                <p className={style.filterDrop}>Азія</p>
+                <p className={style.filterDrop}>Пустелі</p>
+                <p className={style.filterDrop}>Африка</p>
+              </div>
             </div>
-          </div>
 
-          <TravellersStories stories={this.state.stories} count={visibleCount}/>
+            <TravellersStories stories={stories} count={visibleCount} />
 
-            {visibleCount < this.state.stories.length ? (
+            {visibleCount < stories.length ? (
               <button
                 type="button"
                 className={style.moreBtn}
@@ -97,7 +81,7 @@ render(){
       </main>
       <Footer />
     </>
-  )}
+  );
 };
 
-export default StoriesPage
+export default StoriesPage;
