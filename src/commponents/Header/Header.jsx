@@ -2,10 +2,11 @@ import { Container } from "../../commponents/Container/Container.jsx";
 import styles from "./Header.module.css";
 import logo from "../../images/logo.svg";
 import burger from "../../images/burger.svg";
-
+import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <header className={styles.header}>
+
       <Container>
         <div className={styles.header__main}>
           <div className={styles.logo__block}>
@@ -16,54 +17,54 @@ export const Header = () => {
           <nav className={styles.header__nav}>
             <ul className={styles.header__list}>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../HomePage/HomePage.jsx"
+                  to="/"
                 >
                   Головна
-                </a>
+                </Link>
               </li>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../StoriesPage/StoriesPage.jsx"
+                  to="/stories"
                 >
                   Історії
-                </a>
+                </Link>
               </li>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../TravellersPage/TravellersPage.jsx"
+                  to="/traveller"
                 >
                   Мандрівники
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
 
           <div className={styles.header__buttons}>
-            <a
+            <Link
               className={styles.button__link}
-              href="../../AuthPage/AuthPage.jsx"
+              to="/auth"
             >
               Вхід
-            </a>
-            <a
+            </Link>
+            <Link
               className={styles.button__link}
-              href="../../AuthPage/AuthPage.jsx"
+              to="/auth"
             >
               Реєстрація
-            </a>
+            </Link>
           </div>
 
           <div className={styles.header__box}>
-            <a
+            <Link
               className={styles.header__published}
-              href="../../AddStoryPage/AddStoryPage.jsx"
+              to="addstory"
             >
               Опублікувати історію
-            </a>
+            </Link>
             <button className={styles.burger__btn}>
               <img src={burger} alt="Меню" />
             </button>
