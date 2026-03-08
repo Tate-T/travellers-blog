@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travellers-blog/static/css/main.426e78ab.css",
-    "main.js": "/travellers-blog/static/js/main.9a61dcc5.js",
+    "main.css": "/travellers-blog/static/css/main.0196cde3.css",
+    "main.js": "/travellers-blog/static/js/main.8414658e.js",
     "static/media/moonlit-coral-reef.png": "/travellers-blog/static/media/moonlit-coral-reef.a5392a715cee2d08d947.png",
     "static/media/background.webp": "/travellers-blog/static/media/background.bf8d480a651394437c96.webp",
     "static/media/historyHero.webp": "/travellers-blog/static/media/historyHero.9dbf4bc9a9353d1b5d2e.webp",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/travellers-blog/static/media/logo.50d7611c0197f021b0edc038151326f5.svg",
     "static/media/burger.svg": "/travellers-blog/static/media/burger.7910585d70bb8db4e10ae9f98698b5bd.svg",
     "index.html": "/travellers-blog/index.html",
-    "main.426e78ab.css.map": "/travellers-blog/static/css/main.426e78ab.css.map",
-    "main.9a61dcc5.js.map": "/travellers-blog/static/js/main.9a61dcc5.js.map"
+    "main.0196cde3.css.map": "/travellers-blog/static/css/main.0196cde3.css.map",
+    "main.8414658e.js.map": "/travellers-blog/static/js/main.8414658e.js.map"
   },
   "entrypoints": [
-    "static/css/main.426e78ab.css",
-    "static/js/main.9a61dcc5.js"
+    "static/css/main.0196cde3.css",
+    "static/js/main.8414658e.js"
   ]
 }
