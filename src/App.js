@@ -7,20 +7,22 @@ import StoriesPage from "./pages/StoriesPage/StoriesPage";
 import { StoryPage } from "./pages/StoryPage/StoryPage";
 import { TravellerPage } from "./pages/TravellerPage/TravellerPage";
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
+import { PageNotFound } from "./commponents/PageNotFound/PageNotFound";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-          <Route path="/auth" element={<AuthPage />} />
-         <Route path="/" element={<HomePage />} />
-         <Route path="/stories" element={<StoriesPage />} />
-         <Route path="/traveller" element={<TravellerPage />} />
-                {/* <Route path="/story" element={<StoryPage />} /> */}
-         <Route path="/travellers" element={<TravellersPage />} />
+        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/stories" element={<StoriesPage />} />
+        <Route path="/traveller" element={<TravellerPage />} />
+        {/* <Route path="/story" element={<StoryPage />} /> */}
+        <Route path="/travellers" element={<TravellersPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/addstory" element={<AddStoryPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
