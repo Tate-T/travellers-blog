@@ -35,9 +35,9 @@ const {paginationData, handleShowMore} = useShowMore();
               Приєднуйтесь до нашої спільноти мандрівників, де ви зможете ділитися своїми історіями та отримувати натхнення для нових пригод.
               Відкрийте для себе нові місця та знайдіть однодумців!
             </p>
-            <button type="button" className={style.heroButton}>
+            <a href="#join" type="button" className={style.heroButton}>
               Доєднатись
-            </button>
+            </a>
           </Container>
         </section>
         <section className={style.info}>
@@ -177,7 +177,7 @@ const {paginationData, handleShowMore} = useShowMore();
             </button>
           </Container>
         </section>
-        <section className={style.signup}>
+        <section id="join" className={style.signup}>
           <Container>
             <h2 className={style.signupTitle}>Приєднуйтесь до нашої спільноти</h2>
             <p className={style.signupDescription}>Долучайтеся до мандрівників, які діляться своїми історіями та надихають на нові пригоди.</p>

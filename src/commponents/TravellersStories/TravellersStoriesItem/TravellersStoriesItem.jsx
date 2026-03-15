@@ -1,6 +1,7 @@
 import style from "../TravellersStories.module.css";
 import Human from "../../../images/human.jpg";
 import Bookmark from "../../../images/bookmark.png";
+import { Link } from "react-router-dom";
 
 export const StoriesPageItem = ({ story, className }) => {
   // console.log(story)
@@ -27,9 +28,9 @@ export const StoriesPageItem = ({ story, className }) => {
 
         <ul className={style.btnList}>
           <li className={style.btnItem}>
-            <button className={style.btn1} type="button">
+            <Link className={style.btn1} type="button" to="/story">
               Переглянути статтю
-            </button>
+            </Link>
           </li>
           <li className={style.btnItem}>
             <button className={style.btn2} type="button">

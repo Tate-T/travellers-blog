@@ -9,10 +9,10 @@ export const Header = () => {
 
       <Container>
         <div className={styles.header__main}>
-          <div className={styles.logo__block}>
+          <Link className={styles.logo__block} to="/">
             <img src={logo} alt="Логотип" />
             <p className={styles.header__text}>Подорожники</p>
-          </div>
+          </Link>
 
           <nav className={styles.header__nav}>
             <ul className={styles.header__list}>
@@ -35,7 +35,7 @@ export const Header = () => {
               <li className={styles.header__item}>
                 <Link
                   className={styles.header__link}
-                  to="/traveller"
+                  to="/travellers"
                 >
                   Мандрівники
                 </Link>

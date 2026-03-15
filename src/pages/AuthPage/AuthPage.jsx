@@ -4,6 +4,7 @@ import {LoginForm} from "./LoginForm.jsx"
 import {RegistrationForm} from "./RegistrationForm.jsx"
 import { Container } from "../../commponents/Container/Container.jsx";
 import style from "./AuthPage.module.css"
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg"
 
 export const AuthPage = () => {
@@ -12,10 +13,10 @@ export const AuthPage = () => {
       {/* <Header /> */}
       <Container>
       <main className={style.auth}>
-        <div className={style.logo}>
+        <Link className={style.logo} to="/">
          <img src={logo} alt="" />
          <p>Подорожники</p>
-         </div>
+         </Link>
         <ul className={style.list}>
           <li className={`${style.li} ${style.active}`}><button className={style.button}>Реєстрація</button></li>
           <li className={style.li}><button className={style.button}>Вхід</button></li>

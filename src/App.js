@@ -5,7 +5,6 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import StoriesPage from "./pages/StoriesPage/StoriesPage";
 import { StoryPage } from "./pages/StoryPage/StoryPage";
-import { TravellerPage } from "./pages/TravellerPage/TravellerPage";
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
 import { PageNotFound } from "./commponents/PageNotFound/PageNotFound";
 import { Routes, Route } from "react-router-dom";
@@ -17,7 +16,7 @@ function App() {
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/stories" element={<StoriesPage />} />
-        <Route path="/traveller" element={<TravellerPage />} />
+        <Route path="/story" element={<StoryPage />} />
         {/* <Route path="/story" element={<StoryPage />} /> */}
         <Route path="/travellers" element={<TravellersPage />} />
         <Route path="/profile" element={<ProfilePage />} />
