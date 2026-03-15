@@ -19,7 +19,7 @@ function App() {
         <Route path="/story" element={<StoryPage />} />
         {/* <Route path="/story" element={<StoryPage />} /> */}
         <Route path="/travellers" element={<TravellersPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/profile/:profileId" element={<ProfilePage />} />
         <Route path="/addstory" element={<AddStoryPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
