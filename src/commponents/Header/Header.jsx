@@ -2,8 +2,11 @@ import { Container } from "../../commponents/Container/Container.jsx";
 import styles from "./Header.module.css";
 import logo from "../../images/logo.svg";
 import burger from "../../images/burger.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export const Header = () => {
+
+  const location = useLocation()
+
   return (
     <header className={styles.header}>
 
@@ -14,7 +17,8 @@ export const Header = () => {
             <p className={styles.header__text}>Подорожники</p>
           </Link>
 
-          <nav className={styles.header__nav}>
+          {location.pathname !== "/auth" && (
+   <nav className={styles.header__nav}>
             <ul className={styles.header__list}>
               <li className={styles.header__item}>
                 <Link
@@ -41,34 +45,37 @@ export const Header = () => {
                 </Link>
               </li>
             </ul>
+
+
+            <div className={styles.header__buttons}>
+              <Link
+                className={styles.button__link}
+                to="/auth"
+              >
+                Вхід
+              </Link>
+              <Link
+                className={styles.button__link}
+                to="/auth"
+              >
+                Реєстрація
+              </Link>
+            </div>
+
+            <div className={styles.header__box}>
+              <Link
+                className={styles.header__published}
+                to="addstory"
+              >
+                Опублікувати історію
+              </Link>
+              <button className={styles.burger__btn}>
+                <img src={burger} alt="Меню" />
+              </button>
+            </div>
           </nav>
-
-          <div className={styles.header__buttons}>
-            <Link
-              className={styles.button__link}
-              to="/auth"
-            >
-              Вхід
-            </Link>
-            <Link
-              className={styles.button__link}
-              to="/auth"
-            >
-              Реєстрація
-            </Link>
-          </div>
-
-          <div className={styles.header__box}>
-            <Link
-              className={styles.header__published}
-              to="addstory"
-            >
-              Опублікувати історію
-            </Link>
-            <button className={styles.burger__btn}>
-              <img src={burger} alt="Меню" />
-            </button>
-          </div>
+)}
+         
         </div>
       </Container>
 
