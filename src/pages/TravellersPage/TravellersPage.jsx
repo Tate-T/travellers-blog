@@ -1,49 +1,38 @@
-import { Header } from "../../commponents/Header/Header.jsx"
-import { Footer } from "../../commponents/Footer/Footer.jsx"
 import { Container } from "../../commponents/Container/Container.jsx";
-import style from "./TravellersPage.module.css"
-import { Link, useLocation, useParams } from "react-router-dom";
+import style from "./TravellersPage.module.css";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export const TravellersPage = () => {
-
-  // const { profileId } = useParams();
-  // console.log(profileId)
-  // console.log(window.history)
-  // console.log(window.location)
-  let location = useLocation()
-  console.log(location)
+  let location = useLocation();
+  console.log(location);
   const [travellers, setTravellers] = useState([]);
 
   useEffect(() => {
     fetch("https://69b67459583f543fbd9dc426.mockapi.io/travellers/travellers")
-    .then(a => a.json())
-    .then(data => setTravellers(data))
-  }, [])
-  
+      .then((a) => a.json())
+      .then((data) => setTravellers(data));
+  }, []);
+
   return (
     <>
-      <Header />
+      <section className={style.travellersPage}>
+        <Container>
+          <h2 className={style.travellersTitle}>Мандрівники</h2>
 
-      <Container>
-        <main>
-          <section className={style.travellersPage}>
-            <h2 className={style.travellersTitle}>
-              Мандрівники
-            </h2>
-
-            <ul className={style.travellersList}>
-              {travellers.map(traveller => (
-
+          <ul className={style.travellersList}>
+            {travellers.map((traveller) => (
               <li className={style.travellersItem}>
                 <img className={style.travellersPhoto} src={traveller.photo} alt={traveller.name} />
                 <h3 className={style.travellersName}>{traveller.name}</h3>
                 <p className={style.travellersDescription}>{traveller.description}</p>
-                <Link className={style.travellersButton} to='/profile'>Переглянути профіль</Link>
+                <Link className={style.travellersButton} to="/profile">
+                  Переглянути профіль
+                </Link>
               </li>
-              ))}
-            </ul>
-            {/* <ul className={style.travellersList}>
+            ))}
+          </ul>
+          {/* <ul className={style.travellersList}>
               <li className={style.travellersItem}>
                 <img src="" alt="Анастасія Олійник" className={style.travellersPhoto} />
                 <h3 className={style.travellersName}>Анастасія Олійник</h3>
@@ -117,11 +106,8 @@ export const TravellersPage = () => {
                 <Link className={style.travellersButton} to='/profile'>Переглянути профіль</Link>
               </li>
             </ul> */}
-          </section>
-        </main>
-      </Container>
-
-      <Footer />
+        </Container>
+      </section>
     </>
   );
 };
