@@ -5,8 +5,10 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import StoriesPage from "./pages/StoriesPage/StoriesPage";
 import { StoryPage } from "./pages/StoryPage/StoryPage";
-
+import { TravellerPage } from "./pages/TravellerPage/TravellerPage";
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
+import { PageNotFound } from "./commponents/PageNotFound/PageNotFound";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <HomePage />
       <StoriesPage />
       <StoryPage />
+      <TravellerPage />
       <TravellersPage />
       <ProfilePage />
       <AddStoryPage />

@@ -2,72 +2,80 @@ import { Container } from "../../commponents/Container/Container.jsx";
 import styles from "./Header.module.css";
 import logo from "../../images/logo.svg";
 import burger from "../../images/burger.svg";
-
+import { Link, useLocation } from "react-router-dom";
 export const Header = () => {
+
+  const location = useLocation()
+
   return (
     <header className={styles.header}>
+
       <Container>
         <div className={styles.header__main}>
-          <div className={styles.logo__block}>
+          <Link className={styles.logo__block} to="/">
             <img src={logo} alt="Логотип" />
             <p className={styles.header__text}>Подорожники</p>
-          </div>
+          </Link>
 
-          <nav className={styles.header__nav}>
+          {location.pathname !== "/auth" && (
+   <nav className={styles.header__nav}>
             <ul className={styles.header__list}>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../HomePage/HomePage.jsx"
+                  to="/"
                 >
                   Головна
-                </a>
+                </Link>
               </li>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../StoriesPage/StoriesPage.jsx"
+                  to="/stories"
                 >
                   Історії
-                </a>
+                </Link>
               </li>
               <li className={styles.header__item}>
-                <a
+                <Link
                   className={styles.header__link}
-                  href="../../TravellersPage/TravellersPage.jsx"
+                  to="/travellers"
                 >
                   Мандрівники
-                </a>
+                </Link>
               </li>
             </ul>
+
+
+            <div className={styles.header__buttons}>
+              <Link
+                className={styles.button__link}
+                to="/auth"
+              >
+                Вхід
+              </Link>
+              <Link
+                className={styles.button__link}
+                to="/auth"
+              >
+                Реєстрація
+              </Link>
+            </div>
+
+            <div className={styles.header__box}>
+              <Link
+                className={styles.header__published}
+                to="addstory"
+              >
+                Опублікувати історію
+              </Link>
+              <button className={styles.burger__btn}>
+                <img src={burger} alt="Меню" />
+              </button>
+            </div>
           </nav>
-
-          <div className={styles.header__buttons}>
-            <a
-              className={styles.button__link}
-              href="../../AuthPage/AuthPage.jsx"
-            >
-              Вхід
-            </a>
-            <a
-              className={styles.button__link}
-              href="../../AuthPage/AuthPage.jsx"
-            >
-              Реєстрація
-            </a>
-          </div>
-
-          <div className={styles.header__box}>
-            <a
-              className={styles.header__published}
-              href="../../AddStoryPage/AddStoryPage.jsx"
-            >
-              Опублікувати історію
-            </a>
-            <button className={styles.burger__btn}>
-              <img src={burger} alt="Меню" />
-            </button>
-          </div>
+)}
+         
         </div>
       </Container>
 
