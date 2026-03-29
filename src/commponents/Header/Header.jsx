@@ -3,13 +3,39 @@ import styles from "./Header.module.css";
 import logo from "../../images/logo.svg";
 import burger from "../../images/burger.svg";
 import { Link, useLocation } from "react-router-dom";
-export const Header = () => {
+import { useState, useEffect } from "react";
 
-  const location = useLocation()
+export const Header = () => {
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        isOpen &&
+        !e.target.closest(`.${styles.container__div}`) &&
+        !e.target.closest(`.${styles.burger__btn}`)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isOpen]);
 
   return (
     <header className={styles.header}>
-
       <Container>
         <div className={styles.header__main}>
           <Link className={styles.logo__block} to="/">
@@ -18,116 +44,89 @@ export const Header = () => {
           </Link>
 
           {location.pathname !== "/auth" && (
-   <nav className={styles.header__nav}>
-            <ul className={styles.header__list}>
-              <li className={styles.header__item}>
-                <Link
-                  className={styles.header__link}
-                  to="/"
-                >
-                  Головна
-                </Link>
-              </li>
-              <li className={styles.header__item}>
-                <Link
-                  className={styles.header__link}
-                  to="/stories"
-                >
-                  Історії
-                </Link>
-              </li>
-              <li className={styles.header__item}>
-                <Link
-                  className={styles.header__link}
-                  to="/travellers"
-                >
-                  Мандрівники
-                </Link>
-              </li>
-            </ul>
+            <nav className={styles.header__nav}>
+            
+              <ul className={styles.header__list}>
+                <li>
+                  <Link className={styles.header__link} to="/">
+                    Головна
+                  </Link>
+                </li>
+                <li>
+                  <Link className={styles.header__link} to="/stories">
+                    Історії
+                  </Link>
+                </li>
+                <li>
+                  <Link className={styles.header__link} to="/travellers">
+                    Мандрівники
+                  </Link>
+                </li>
+              </ul>
 
+              {/* КНОПКИ (десктоп) */}
+              <div className={styles.header__buttons}>
+                <Link className={styles.button__link} to="/auth">
+                  Вхід
+                </Link>
+                <Link className={styles.button__link} to="/auth">
+                  Реєстрація
+                </Link>
+              </div>
 
-            <div className={styles.header__buttons}>
-              <Link
-                className={styles.button__link}
-                to="/auth"
-              >
-                Вхід
-              </Link>
-              <Link
-                className={styles.button__link}
-                to="/auth"
-              >
-                Реєстрація
-              </Link>
-            </div>
-
-            <div className={styles.header__box}>
+             
               <Link
                 className={styles.header__published}
-                to="addstory"
+                to="/addstory"
               >
-                Опублікувати історію
+                Опублікувати
               </Link>
-              <button className={styles.burger__btn}>
+
+              {/* Бургер */}
+              <button
+                className={styles.burger__btn}
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 <img src={burger} alt="Меню" />
               </button>
-            </div>
-          </nav>
-)}
-         
+            </nav>
+          )}
         </div>
       </Container>
 
-      {/* Мобільне меню */}
-      <div className={styles.container__div}>
-        <div className={styles.mobile__header}>
-          <img src={logo} className={styles.mobile__logo} alt="Логотип" />
-          <p className={styles.header__text}>Подорожники</p>
-        </div>
-
+      {/* МОБІЛЬНЕ МЕНЮ */}
+      <div
+        className={`${styles.container__div} ${
+          isOpen ? styles.active : ""
+        }`}
+      >
         <nav className={styles.mobile__nav}>
           <ul className={styles.container__list}>
-            <li className={styles.header__item}>
-              <a
-                className={styles.container__link}
-                href="../../HomePage/HomePage.jsx"
-              >
+            <li>
+              <Link to="/" onClick={() => setIsOpen(false)}>
                 Головна
-              </a>
+              </Link>
             </li>
-            <li className={styles.header__item}>
-              <a
-                className={styles.container__link}
-                href="../../StoriesPage/StoriesPage.jsx"
-              >
+            <li>
+              <Link to="/stories" onClick={() => setIsOpen(false)}>
                 Історії
-              </a>
+              </Link>
             </li>
-            <li className={styles.header__item}>
-              <a
-                className={styles.container__link}
-                href="../../TravellersPage/TravellersPage.jsx"
-              >
+            <li>
+              <Link to="/travellers" onClick={() => setIsOpen(false)}>
                 Мандрівники
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className={styles.container__buttons}>
-          <a
-            className={styles.container__btn}
-            href="../../AuthPage/AuthPage.jsx"
-          >
+          <Link to="/auth" onClick={() => setIsOpen(false)}>
             Вхід
-          </a>
-          <a
-            className={styles.container__btn}
-            href="../../AuthPage/AuthPage.jsx"
-          >
+          </Link>
+          <Link to="/auth" onClick={() => setIsOpen(false)}>
             Реєстрація
-          </a>
+          </Link>
         </div>
       </div>
     </header>
