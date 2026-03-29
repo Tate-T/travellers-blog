@@ -8,10 +8,15 @@ import { StoryPage } from "./pages/StoryPage/StoryPage";
 import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
 import { PageNotFound } from "./commponents/PageNotFound/PageNotFound";
 import { Routes, Route } from "react-router-dom";
-
+import { lazy, Suspense } from "react";
 function App() {
   return (
     <div className="App">
+      <Suspense fallback={
+        <div>
+          Завантаження
+        </div>
+      }>
       <Routes>
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/" element={<HomePage />} />
@@ -23,6 +28,7 @@ function App() {
         <Route path="/addstory" element={<AddStoryPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      </Suspense>
     </div>
   );
 }
