@@ -1,4 +1,8 @@
 import "./App.css";
+
+import { Header } from "./commponents/Header/Header";
+import { Footer } from "./commponents/Footer/Footer";
+
 import { AddStoryPage } from "./pages/AddStoryPage/AddStoryPage";
 import { AuthPage } from "./pages/AuthPage/AuthPage";
 import { HomePage } from "./pages/HomePage/HomePage";
@@ -13,14 +17,22 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <AuthPage />
-      <HomePage />
-      <StoriesPage />
-      <StoryPage />
-      <TravellerPage />
-      <TravellersPage />
-      <ProfilePage />
-      <AddStoryPage />
+
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/auth" element={<AuthPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/stories" element={<StoriesPage />} />
+          <Route path="/stories/:storyId" element={<StoryPage />} />
+          <Route path="/travellers" element={<TravellersPage />} />
+          <Route path="/profile/:profileId" element={<ProfilePage />} />
+          <Route path="/addstory" element={<AddStoryPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+
     </div>
   );
 }
