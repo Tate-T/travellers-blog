@@ -3,8 +3,9 @@ import Human from "../../../images/human.jpg";
 import Bookmark from "../../../images/bookmark.png";
 import { Link } from "react-router-dom";
 
-export const StoriesPageItem = ({ story, className }) => {
-  // console.log(story)
+export const StoriesItem = ({ story, className }) => {
+  // console.log(story);
+  const currentStory = story._id.$oid;
   // console.log(story._id.$oid)
   return (
     <li className={`${style.storiesItem} ${className || ""}`}>
@@ -28,7 +29,7 @@ export const StoriesPageItem = ({ story, className }) => {
 
         <ul className={style.btnList}>
           <li className={style.btnItem}>
-            <Link className={style.btn1} type="button" to="/story">
+            <Link className={style.btn1} type="button" to={currentStory}>
               Переглянути статтю
             </Link>
           </li>
