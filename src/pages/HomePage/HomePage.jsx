@@ -4,7 +4,7 @@ import style from "./HomePage.module.css";
 import { HomepageContext } from "../../commponents/context/HomepageContext.jsx";
 import { useShowMore } from "../../hooks/useShowMore.jsx";
 
-export const HomePage = () => {
+const HomePage = () => {
   // const [visibleCount, setVisibleCount] = useState(6); // показуємо спочатку 6 історій
   // const stories = useArticleFetch();
 
@@ -182,3 +182,6 @@ export const HomePage = () => {
     </>
   );
 };
+
+
+export default HomePage

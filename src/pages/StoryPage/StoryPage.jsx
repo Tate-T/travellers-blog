@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import { CurrentStoryContext } from "../../commponents/context/CurrentStoryContext.jsx";
 import { useContext } from "react";
 
-export const StoryPage = () => {
+const StoryPage = () => {
   const { storyId } = useParams();
 
   const { stories } = useContext(CurrentStoryContext);
@@ -51,3 +51,5 @@ export const StoryPage = () => {
     </>
   );
 };
+
+export default StoryPage

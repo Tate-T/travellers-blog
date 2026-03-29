@@ -1,7 +1,9 @@
-export const AddStoryPage = () => {
+const AddStoryPage = () => {
   return (
     <>
 
     </>
   );
 };
+
+export default AddStoryPage

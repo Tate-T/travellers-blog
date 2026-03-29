@@ -3,7 +3,7 @@ import style from "./TravellersPage.module.css";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export const TravellersPage = () => {
+const TravellersPage = () => {
   let location = useLocation();
   console.log(location);
   const [travellers, setTravellers] = useState([]);
@@ -111,3 +111,6 @@ export const TravellersPage = () => {
     </>
   );
 };
+
+
+export default TravellersPage

@@ -1,17 +1,36 @@
 import "./App.css";
-
 import { Header } from "./commponents/Header/Header";
 import { Footer } from "./commponents/Footer/Footer";
-
-import { AddStoryPage } from "./pages/AddStoryPage/AddStoryPage";
+// import { AddStoryPage } from "./pages/AddStoryPage/AddStoryPage";
 import { AuthPage } from "./pages/AuthPage/AuthPage";
-import { HomePage } from "./pages/HomePage/HomePage";
+// import { HomePage } from "./pages/HomePage/HomePage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
-import StoriesPage from "./pages/StoriesPage/StoriesPage";
-import { StoryPage } from "./pages/StoryPage/StoryPage";
-import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
+// import StoriesPage from "./pages/StoriesPage/StoriesPage";
+// import { StoryPage } from "./pages/StoryPage/StoryPage";
+// import { TravellersPage } from "./pages/TravellersPage/TravellersPage";
 import { PageNotFound } from "./commponents/PageNotFound/PageNotFound";
 import { Routes, Route } from "react-router-dom";
+import { lazy } from "react";
+
+const StoryPage = lazy(() => 
+  import("./pages/StoryPage/StoryPage" /* webpackChunkName: "StoryPahe-page" */)
+)
+
+const TravellersPage = lazy(() => 
+  import("./pages/TravellersPage/TravellersPage" /* webpackChunkName: "TravallersPage-page" */)
+)
+
+const AddStoryPage = lazy(() => 
+  import("./pages/AddStoryPage/AddStoryPage" /* webpackChunkName: "AddStoryPage-page" */)
+)
+
+const HomePage = lazy(() => 
+  import("./pages/HomePage/HomePage" /* webpackChunkName: "home-page" */)
+)
+
+const StoriesPage = lazy(() => 
+  import("./pages/StoriesPage/StoriesPage" /* webpackChunkName: "stories-page" */)
+)
 
 function App() {
   return (
